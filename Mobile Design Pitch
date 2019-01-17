@@ -1,0 +1,39 @@
+Assignment 1 - Design & Pitch
+Jared Fukumoto	(N01189530)
+Sean Gallagher	(N01163912)
+Devon Ly		(N01160689)
+Carter Rennick	(N01155242)
+
+Purpose 
+	Our team will be making a game much similar to a tamagotchi game where the user will be incharge of taking care of a pet.
+
+Description 
+	Our game will present a almost life like pet that the user will take care of. The pet will require the user to feed them X meals a day with timed delay between. Using the gps the user can choose to bring their pet for a walk. Hopefully we will be able to incorporate AR viewing of the said pet. Achievements in games will be something like how much they take care of the pet such as remember to feed them 7 day in a row.
+
+	Features of pet game
+Feeding pet?
+Washing pet?
+Walking pet (using gps)?
+Pettings?
+BATTLE OTHER PET OWNERS
+Camera (Either AR, take a selfie with pet)
+Gatcha draw for pet(Make different pets)?
+CUBE models pets (Makes modeling easier)
+
+
+Areas of Interest
+
+GPS (CoreLocation MapKit)       	- Apple Watch (WatchKit)
+Push Notifications (Firebase)       	- Camera
+Augmented Reality (AR Kit 2)    	- Achievements (GamePlay Kit)
+Personal Assistant (SiriKit)
+
+
+Document requirements
+Explain the purpose of your app / game.
+Incorporate multiple areas of interest.
+ Create mocks for each screen. 
+ Explain the value of the app for the user.
+ Outline the users typical path through out the app. 
+ Discuss a few use cases. 
+Include a description of the capstone if it’s a companion app.
