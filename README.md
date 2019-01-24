@@ -5,6 +5,13 @@ The game will feature the ability to feed, wash and pet your pet using touch-scr
 
 We believe this game will not only be entertaining, but can be used as a sort of "pet-caring trainer", or simply as a low-cost alternative to real pet.
 
+**Areas of Interest**
+-GPS (CoreLocation MapKit)
+-Apple Watch (WatchKit)
+-Push Notifications (Firebase)
+-Achievements (GamePlay Kit)
+-Personal Assistant (SiriKit)
+
 **The Team**  
 Jared Fukumoto (N01189530)  
 Sean Gallagher (N01163912)  
