@@ -18,5 +18,5 @@ Sean Gallagher (N01163912)
 Devon Ly (N01160689)  
 Carter Rennick (N01155242)  
 
-Trello: https://trello.com/b/SuAk15PY/mobile-app
+Trello: https://trello.com/b/SuAk15PY/mobile-app  
 Google Slides Presentation: https://docs.google.com/presentation/d/14Yz-yi2RyZt6Zo62bX-o_a5g5NePTvt7T3poYhs74n4
