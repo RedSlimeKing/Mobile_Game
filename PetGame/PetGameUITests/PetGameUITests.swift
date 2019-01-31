@@ -1,14 +1,14 @@
 //
-//  MoblieGameUITests.swift
-//  MoblieGameUITests
+//  PetGameUITests.swift
+//  PetGameUITests
 //
-//  Created by Ly Devon A. on 1/24/19.
-//  Copyright © 2019 Ly Devon A. All rights reserved.
+//  Created by Rennick Carter M. on 2019-01-31.
+//  Copyright © 2019 Rennick Carter M. All rights reserved.
 //
 
 import XCTest
 
-class MoblieGameUITests: XCTestCase {
+class PetGameUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
