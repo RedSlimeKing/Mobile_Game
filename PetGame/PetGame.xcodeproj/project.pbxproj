@@ -7,70 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D18BA3482203B2380060524A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18BA3472203B2380060524A /* AppDelegate.swift */; };
-		D18BA34C2203B2380060524A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D18BA34B2203B2380060524A /* Actions.sks */; };
-		D18BA34E2203B2380060524A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18BA34D2203B2380060524A /* GameScene.swift */; };
-		D18BA3502203B2380060524A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18BA34F2203B2380060524A /* GameViewController.swift */; };
-		D18BA3532203B2380060524A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18BA3512203B2380060524A /* Main.storyboard */; };
-		D18BA3552203B2380060524A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18BA3542203B2380060524A /* Assets.xcassets */; };
-		D18BA3582203B2380060524A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18BA3562203B2380060524A /* LaunchScreen.storyboard */; };
-		D18BA3632203B2380060524A /* PetGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18BA3622203B2380060524A /* PetGameTests.swift */; };
-		D18BA36E2203B2390060524A /* PetGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18BA36D2203B2390060524A /* PetGameUITests.swift */; };
-		D18BA37C2203B2E50060524A /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18BA37B2203B2E50060524A /* Zombie.swift */; };
+		D1AFEDF0220CCABD0082FA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */; };
+		D1AFEDF2220CCABD0082FA6B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDF1220CCABD0082FA6B /* GameScene.sks */; };
+		D1AFEDF4220CCABD0082FA6B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDF3220CCABD0082FA6B /* Actions.sks */; };
+		D1AFEDF6220CCABD0082FA6B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEDF5220CCABD0082FA6B /* GameScene.swift */; };
+		D1AFEDF8220CCABD0082FA6B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEDF7220CCABD0082FA6B /* GameViewController.swift */; };
+		D1AFEDFB220CCABD0082FA6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDF9220CCABD0082FA6B /* Main.storyboard */; };
+		D1AFEDFD220CCABE0082FA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDFC220CCABE0082FA6B /* Assets.xcassets */; };
+		D1AFEE00220CCABE0082FA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDFE220CCABE0082FA6B /* LaunchScreen.storyboard */; };
+		D1AFEE0B220CCABE0082FA6B /* PetGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEE0A220CCABE0082FA6B /* PetGameTests.swift */; };
+		D1AFEE16220CCABE0082FA6B /* PetGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEE15220CCABE0082FA6B /* PetGameUITests.swift */; };
+		D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEE23220CCFD90082FA6B /* Zombie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D18BA35F2203B2380060524A /* PBXContainerItemProxy */ = {
+		D1AFEE07220CCABE0082FA6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D18BA33C2203B2380060524A /* Project object */;
+			containerPortal = D1AFEDE4220CCABD0082FA6B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D18BA3432203B2380060524A;
+			remoteGlobalIDString = D1AFEDEB220CCABD0082FA6B;
 			remoteInfo = PetGame;
 		};
-		D18BA36A2203B2380060524A /* PBXContainerItemProxy */ = {
+		D1AFEE12220CCABE0082FA6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D18BA33C2203B2380060524A /* Project object */;
+			containerPortal = D1AFEDE4220CCABD0082FA6B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D18BA3432203B2380060524A;
+			remoteGlobalIDString = D1AFEDEB220CCABD0082FA6B;
 			remoteInfo = PetGame;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D18BA3442203B2380060524A /* PetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D18BA3472203B2380060524A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D18BA34B2203B2380060524A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		D18BA34D2203B2380060524A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		D18BA34F2203B2380060524A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		D18BA3522203B2380060524A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D18BA3542203B2380060524A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D18BA3572203B2380060524A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D18BA3592203B2380060524A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D18BA35E2203B2380060524A /* PetGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D18BA3622203B2380060524A /* PetGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetGameTests.swift; sourceTree = "<group>"; };
-		D18BA3642203B2380060524A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D18BA3692203B2380060524A /* PetGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D18BA36D2203B2390060524A /* PetGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetGameUITests.swift; sourceTree = "<group>"; };
-		D18BA36F2203B2390060524A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D18BA37B2203B2E50060524A /* Zombie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
+		D1AFEDEC220CCABD0082FA6B /* PetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1AFEDF1220CCABD0082FA6B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D1AFEDF3220CCABD0082FA6B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		D1AFEDF5220CCABD0082FA6B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D1AFEDF7220CCABD0082FA6B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D1AFEDFA220CCABD0082FA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1AFEDFC220CCABE0082FA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1AFEDFF220CCABE0082FA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1AFEE01220CCABE0082FA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AFEE06220CCABE0082FA6B /* PetGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AFEE0A220CCABE0082FA6B /* PetGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetGameTests.swift; sourceTree = "<group>"; };
+		D1AFEE0C220CCABE0082FA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AFEE11220CCABE0082FA6B /* PetGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AFEE15220CCABE0082FA6B /* PetGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetGameUITests.swift; sourceTree = "<group>"; };
+		D1AFEE17220CCABE0082FA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AFEE23220CCFD90082FA6B /* Zombie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D18BA3412203B2380060524A /* Frameworks */ = {
+		D1AFEDE9220CCABD0082FA6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D18BA35B2203B2380060524A /* Frameworks */ = {
+		D1AFEE03220CCABE0082FA6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D18BA3662203B2380060524A /* Frameworks */ = {
+		D1AFEE0E220CCABE0082FA6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,56 +82,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D18BA33B2203B2380060524A = {
+		D1AFEDE3220CCABD0082FA6B = {
 			isa = PBXGroup;
 			children = (
-				D18BA3462203B2380060524A /* PetGame */,
-				D18BA3612203B2380060524A /* PetGameTests */,
-				D18BA36C2203B2390060524A /* PetGameUITests */,
-				D18BA3452203B2380060524A /* Products */,
+				D1AFEDEE220CCABD0082FA6B /* PetGame */,
+				D1AFEE09220CCABE0082FA6B /* PetGameTests */,
+				D1AFEE14220CCABE0082FA6B /* PetGameUITests */,
+				D1AFEDED220CCABD0082FA6B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D18BA3452203B2380060524A /* Products */ = {
+		D1AFEDED220CCABD0082FA6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D18BA3442203B2380060524A /* PetGame.app */,
-				D18BA35E2203B2380060524A /* PetGameTests.xctest */,
-				D18BA3692203B2380060524A /* PetGameUITests.xctest */,
+				D1AFEDEC220CCABD0082FA6B /* PetGame.app */,
+				D1AFEE06220CCABE0082FA6B /* PetGameTests.xctest */,
+				D1AFEE11220CCABE0082FA6B /* PetGameUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D18BA3462203B2380060524A /* PetGame */ = {
+		D1AFEDEE220CCABD0082FA6B /* PetGame */ = {
 			isa = PBXGroup;
 			children = (
-				D18BA3472203B2380060524A /* AppDelegate.swift */,
-				D18BA34B2203B2380060524A /* Actions.sks */,
-				D18BA34D2203B2380060524A /* GameScene.swift */,
-				D18BA34F2203B2380060524A /* GameViewController.swift */,
-				D18BA3512203B2380060524A /* Main.storyboard */,
-				D18BA3542203B2380060524A /* Assets.xcassets */,
-				D18BA3562203B2380060524A /* LaunchScreen.storyboard */,
-				D18BA3592203B2380060524A /* Info.plist */,
-				D18BA37B2203B2E50060524A /* Zombie.swift */,
+				D1AFEDF1220CCABD0082FA6B /* GameScene.sks */,
+				D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */,
+				D1AFEDF3220CCABD0082FA6B /* Actions.sks */,
+				D1AFEDF5220CCABD0082FA6B /* GameScene.swift */,
+				D1AFEDF7220CCABD0082FA6B /* GameViewController.swift */,
+				D1AFEDF9220CCABD0082FA6B /* Main.storyboard */,
+				D1AFEDFC220CCABE0082FA6B /* Assets.xcassets */,
+				D1AFEDFE220CCABE0082FA6B /* LaunchScreen.storyboard */,
+				D1AFEE01220CCABE0082FA6B /* Info.plist */,
+				D1AFEE23220CCFD90082FA6B /* Zombie.swift */,
 			);
 			path = PetGame;
 			sourceTree = "<group>";
 		};
-		D18BA3612203B2380060524A /* PetGameTests */ = {
+		D1AFEE09220CCABE0082FA6B /* PetGameTests */ = {
 			isa = PBXGroup;
 			children = (
-				D18BA3622203B2380060524A /* PetGameTests.swift */,
-				D18BA3642203B2380060524A /* Info.plist */,
+				D1AFEE0A220CCABE0082FA6B /* PetGameTests.swift */,
+				D1AFEE0C220CCABE0082FA6B /* Info.plist */,
 			);
 			path = PetGameTests;
 			sourceTree = "<group>";
 		};
-		D18BA36C2203B2390060524A /* PetGameUITests */ = {
+		D1AFEE14220CCABE0082FA6B /* PetGameUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D18BA36D2203B2390060524A /* PetGameUITests.swift */,
-				D18BA36F2203B2390060524A /* Info.plist */,
+				D1AFEE15220CCABE0082FA6B /* PetGameUITests.swift */,
+				D1AFEE17220CCABE0082FA6B /* Info.plist */,
 			);
 			path = PetGameUITests;
 			sourceTree = "<group>";
@@ -137,13 +140,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D18BA3432203B2380060524A /* PetGame */ = {
+		D1AFEDEB220CCABD0082FA6B /* PetGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D18BA3722203B2390060524A /* Build configuration list for PBXNativeTarget "PetGame" */;
+			buildConfigurationList = D1AFEE1A220CCABE0082FA6B /* Build configuration list for PBXNativeTarget "PetGame" */;
 			buildPhases = (
-				D18BA3402203B2380060524A /* Sources */,
-				D18BA3412203B2380060524A /* Frameworks */,
-				D18BA3422203B2380060524A /* Resources */,
+				D1AFEDE8220CCABD0082FA6B /* Sources */,
+				D1AFEDE9220CCABD0082FA6B /* Frameworks */,
+				D1AFEDEA220CCABD0082FA6B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -151,69 +154,69 @@
 			);
 			name = PetGame;
 			productName = PetGame;
-			productReference = D18BA3442203B2380060524A /* PetGame.app */;
+			productReference = D1AFEDEC220CCABD0082FA6B /* PetGame.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D18BA35D2203B2380060524A /* PetGameTests */ = {
+		D1AFEE05220CCABE0082FA6B /* PetGameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D18BA3752203B2390060524A /* Build configuration list for PBXNativeTarget "PetGameTests" */;
+			buildConfigurationList = D1AFEE1D220CCABE0082FA6B /* Build configuration list for PBXNativeTarget "PetGameTests" */;
 			buildPhases = (
-				D18BA35A2203B2380060524A /* Sources */,
-				D18BA35B2203B2380060524A /* Frameworks */,
-				D18BA35C2203B2380060524A /* Resources */,
+				D1AFEE02220CCABE0082FA6B /* Sources */,
+				D1AFEE03220CCABE0082FA6B /* Frameworks */,
+				D1AFEE04220CCABE0082FA6B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D18BA3602203B2380060524A /* PBXTargetDependency */,
+				D1AFEE08220CCABE0082FA6B /* PBXTargetDependency */,
 			);
 			name = PetGameTests;
 			productName = PetGameTests;
-			productReference = D18BA35E2203B2380060524A /* PetGameTests.xctest */;
+			productReference = D1AFEE06220CCABE0082FA6B /* PetGameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D18BA3682203B2380060524A /* PetGameUITests */ = {
+		D1AFEE10220CCABE0082FA6B /* PetGameUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D18BA3782203B2390060524A /* Build configuration list for PBXNativeTarget "PetGameUITests" */;
+			buildConfigurationList = D1AFEE20220CCABE0082FA6B /* Build configuration list for PBXNativeTarget "PetGameUITests" */;
 			buildPhases = (
-				D18BA3652203B2380060524A /* Sources */,
-				D18BA3662203B2380060524A /* Frameworks */,
-				D18BA3672203B2380060524A /* Resources */,
+				D1AFEE0D220CCABE0082FA6B /* Sources */,
+				D1AFEE0E220CCABE0082FA6B /* Frameworks */,
+				D1AFEE0F220CCABE0082FA6B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D18BA36B2203B2380060524A /* PBXTargetDependency */,
+				D1AFEE13220CCABE0082FA6B /* PBXTargetDependency */,
 			);
 			name = PetGameUITests;
 			productName = PetGameUITests;
-			productReference = D18BA3692203B2380060524A /* PetGameUITests.xctest */;
+			productReference = D1AFEE11220CCABE0082FA6B /* PetGameUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D18BA33C2203B2380060524A /* Project object */ = {
+		D1AFEDE4220CCABD0082FA6B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Rennick Carter M.";
 				TargetAttributes = {
-					D18BA3432203B2380060524A = {
+					D1AFEDEB220CCABD0082FA6B = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
-					D18BA35D2203B2380060524A = {
+					D1AFEE05220CCABE0082FA6B = {
 						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = D18BA3432203B2380060524A;
+						TestTargetID = D1AFEDEB220CCABD0082FA6B;
 					};
-					D18BA3682203B2380060524A = {
+					D1AFEE10220CCABE0082FA6B = {
 						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = D18BA3432203B2380060524A;
+						TestTargetID = D1AFEDEB220CCABD0082FA6B;
 					};
 				};
 			};
-			buildConfigurationList = D18BA33F2203B2380060524A /* Build configuration list for PBXProject "PetGame" */;
+			buildConfigurationList = D1AFEDE7220CCABD0082FA6B /* Build configuration list for PBXProject "PetGame" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,38 +224,39 @@
 				en,
 				Base,
 			);
-			mainGroup = D18BA33B2203B2380060524A;
-			productRefGroup = D18BA3452203B2380060524A /* Products */;
+			mainGroup = D1AFEDE3220CCABD0082FA6B;
+			productRefGroup = D1AFEDED220CCABD0082FA6B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D18BA3432203B2380060524A /* PetGame */,
-				D18BA35D2203B2380060524A /* PetGameTests */,
-				D18BA3682203B2380060524A /* PetGameUITests */,
+				D1AFEDEB220CCABD0082FA6B /* PetGame */,
+				D1AFEE05220CCABE0082FA6B /* PetGameTests */,
+				D1AFEE10220CCABE0082FA6B /* PetGameUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D18BA3422203B2380060524A /* Resources */ = {
+		D1AFEDEA220CCABD0082FA6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D18BA3532203B2380060524A /* Main.storyboard in Resources */,
-				D18BA3552203B2380060524A /* Assets.xcassets in Resources */,
-				D18BA3582203B2380060524A /* LaunchScreen.storyboard in Resources */,
-				D18BA34C2203B2380060524A /* Actions.sks in Resources */,
+				D1AFEDFB220CCABD0082FA6B /* Main.storyboard in Resources */,
+				D1AFEDF2220CCABD0082FA6B /* GameScene.sks in Resources */,
+				D1AFEDFD220CCABE0082FA6B /* Assets.xcassets in Resources */,
+				D1AFEE00220CCABE0082FA6B /* LaunchScreen.storyboard in Resources */,
+				D1AFEDF4220CCABD0082FA6B /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D18BA35C2203B2380060524A /* Resources */ = {
+		D1AFEE04220CCABE0082FA6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D18BA3672203B2380060524A /* Resources */ = {
+		D1AFEE0F220CCABE0082FA6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,61 +266,61 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D18BA3402203B2380060524A /* Sources */ = {
+		D1AFEDE8220CCABD0082FA6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D18BA34E2203B2380060524A /* GameScene.swift in Sources */,
-				D18BA37C2203B2E50060524A /* Zombie.swift in Sources */,
-				D18BA3502203B2380060524A /* GameViewController.swift in Sources */,
-				D18BA3482203B2380060524A /* AppDelegate.swift in Sources */,
+				D1AFEDF6220CCABD0082FA6B /* GameScene.swift in Sources */,
+				D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */,
+				D1AFEDF8220CCABD0082FA6B /* GameViewController.swift in Sources */,
+				D1AFEDF0220CCABD0082FA6B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D18BA35A2203B2380060524A /* Sources */ = {
+		D1AFEE02220CCABE0082FA6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D18BA3632203B2380060524A /* PetGameTests.swift in Sources */,
+				D1AFEE0B220CCABE0082FA6B /* PetGameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D18BA3652203B2380060524A /* Sources */ = {
+		D1AFEE0D220CCABE0082FA6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D18BA36E2203B2390060524A /* PetGameUITests.swift in Sources */,
+				D1AFEE16220CCABE0082FA6B /* PetGameUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D18BA3602203B2380060524A /* PBXTargetDependency */ = {
+		D1AFEE08220CCABE0082FA6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D18BA3432203B2380060524A /* PetGame */;
-			targetProxy = D18BA35F2203B2380060524A /* PBXContainerItemProxy */;
+			target = D1AFEDEB220CCABD0082FA6B /* PetGame */;
+			targetProxy = D1AFEE07220CCABE0082FA6B /* PBXContainerItemProxy */;
 		};
-		D18BA36B2203B2380060524A /* PBXTargetDependency */ = {
+		D1AFEE13220CCABE0082FA6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D18BA3432203B2380060524A /* PetGame */;
-			targetProxy = D18BA36A2203B2380060524A /* PBXContainerItemProxy */;
+			target = D1AFEDEB220CCABD0082FA6B /* PetGame */;
+			targetProxy = D1AFEE12220CCABE0082FA6B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D18BA3512203B2380060524A /* Main.storyboard */ = {
+		D1AFEDF9220CCABD0082FA6B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D18BA3522203B2380060524A /* Base */,
+				D1AFEDFA220CCABD0082FA6B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D18BA3562203B2380060524A /* LaunchScreen.storyboard */ = {
+		D1AFEDFE220CCABE0082FA6B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D18BA3572203B2380060524A /* Base */,
+				D1AFEDFF220CCABE0082FA6B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -324,7 +328,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D18BA3702203B2390060524A /* Debug */ = {
+		D1AFEE18220CCABE0082FA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -384,7 +388,7 @@
 			};
 			name = Debug;
 		};
-		D18BA3712203B2390060524A /* Release */ = {
+		D1AFEE19220CCABE0082FA6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -438,7 +442,7 @@
 			};
 			name = Release;
 		};
-		D18BA3732203B2390060524A /* Debug */ = {
+		D1AFEE1B220CCABE0082FA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -448,14 +452,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hambercollage.PetGame;
+				PRODUCT_BUNDLE_IDENTIFIER = humbercollege.PetGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D18BA3742203B2390060524A /* Release */ = {
+		D1AFEE1C220CCABE0082FA6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -465,14 +469,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hambercollage.PetGame;
+				PRODUCT_BUNDLE_IDENTIFIER = humbercollege.PetGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		D18BA3762203B2390060524A /* Debug */ = {
+		D1AFEE1E220CCABE0082FA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -484,7 +488,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hambercollage.PetGameTests;
+				PRODUCT_BUNDLE_IDENTIFIER = humbercollege.PetGameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -492,7 +496,7 @@
 			};
 			name = Debug;
 		};
-		D18BA3772203B2390060524A /* Release */ = {
+		D1AFEE1F220CCABE0082FA6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -504,7 +508,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hambercollage.PetGameTests;
+				PRODUCT_BUNDLE_IDENTIFIER = humbercollege.PetGameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,7 +516,7 @@
 			};
 			name = Release;
 		};
-		D18BA3792203B2390060524A /* Debug */ = {
+		D1AFEE21220CCABE0082FA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -523,7 +527,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hambercollage.PetGameUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = humbercollege.PetGameUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,7 +535,7 @@
 			};
 			name = Debug;
 		};
-		D18BA37A2203B2390060524A /* Release */ = {
+		D1AFEE22220CCABE0082FA6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -542,7 +546,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hambercollage.PetGameUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = humbercollege.PetGameUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,43 +557,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D18BA33F2203B2380060524A /* Build configuration list for PBXProject "PetGame" */ = {
+		D1AFEDE7220CCABD0082FA6B /* Build configuration list for PBXProject "PetGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D18BA3702203B2390060524A /* Debug */,
-				D18BA3712203B2390060524A /* Release */,
+				D1AFEE18220CCABE0082FA6B /* Debug */,
+				D1AFEE19220CCABE0082FA6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D18BA3722203B2390060524A /* Build configuration list for PBXNativeTarget "PetGame" */ = {
+		D1AFEE1A220CCABE0082FA6B /* Build configuration list for PBXNativeTarget "PetGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D18BA3732203B2390060524A /* Debug */,
-				D18BA3742203B2390060524A /* Release */,
+				D1AFEE1B220CCABE0082FA6B /* Debug */,
+				D1AFEE1C220CCABE0082FA6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D18BA3752203B2390060524A /* Build configuration list for PBXNativeTarget "PetGameTests" */ = {
+		D1AFEE1D220CCABE0082FA6B /* Build configuration list for PBXNativeTarget "PetGameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D18BA3762203B2390060524A /* Debug */,
-				D18BA3772203B2390060524A /* Release */,
+				D1AFEE1E220CCABE0082FA6B /* Debug */,
+				D1AFEE1F220CCABE0082FA6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D18BA3782203B2390060524A /* Build configuration list for PBXNativeTarget "PetGameUITests" */ = {
+		D1AFEE20220CCABE0082FA6B /* Build configuration list for PBXNativeTarget "PetGameUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D18BA3792203B2390060524A /* Debug */,
-				D18BA37A2203B2390060524A /* Release */,
+				D1AFEE21220CCABE0082FA6B /* Debug */,
+				D1AFEE22220CCABE0082FA6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D18BA33C2203B2380060524A /* Project object */;
+	rootObject = D1AFEDE4220CCABD0082FA6B /* Project object */;
 }

@@ -1,16 +1,18 @@
 //
 //  GameScene.swift
-//  ZombieConga
+//  PetGame
 //
-//  Created by Kevin Kruusi on 2018-02-04.
-//  Copyright © 2018 kevin. All rights reserved.
+//  Created by Rennick Carter M. on 2/7/19.
+//  Copyright © 2019 Rennick Carter M. All rights reserved.
 //
 
 import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
-    //let player : SKSpriteNode = Zombie()
+    
+    private var label : SKLabelNode?
+    private var spinnyNode : SKShapeNode?
     
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.black
