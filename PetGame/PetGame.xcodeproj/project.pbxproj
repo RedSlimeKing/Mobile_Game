@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67FDD0E02216096F00928A34 /* WashScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0DF2216096F00928A34 /* WashScene.swift */; };
+		67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0E322160F5100928A34 /* LobbyScene.swift */; };
 		D1AFEDF0220CCABD0082FA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */; };
 		D1AFEDF2220CCABD0082FA6B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDF1220CCABD0082FA6B /* GameScene.sks */; };
 		D1AFEDF4220CCABD0082FA6B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDF3220CCABD0082FA6B /* Actions.sks */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67FDD0DF2216096F00928A34 /* WashScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashScene.swift; sourceTree = "<group>"; };
+		67FDD0E322160F5100928A34 /* LobbyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyScene.swift; sourceTree = "<group>"; };
 		D1AFEDEC220CCABD0082FA6B /* PetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1AFEDF1220CCABD0082FA6B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				D1AFEDFE220CCABE0082FA6B /* LaunchScreen.storyboard */,
 				D1AFEE01220CCABE0082FA6B /* Info.plist */,
 				D1AFEE23220CCFD90082FA6B /* Zombie.swift */,
+				67FDD0DF2216096F00928A34 /* WashScene.swift */,
+				67FDD0E322160F5100928A34 /* LobbyScene.swift */,
 			);
 			path = PetGame;
 			sourceTree = "<group>";
@@ -271,7 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1AFEDF6220CCABD0082FA6B /* GameScene.swift in Sources */,
+				67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */,
 				D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */,
+				67FDD0E02216096F00928A34 /* WashScene.swift in Sources */,
 				D1AFEDF8220CCABD0082FA6B /* GameViewController.swift in Sources */,
 				D1AFEDF0220CCABD0082FA6B /* AppDelegate.swift in Sources */,
 			);
