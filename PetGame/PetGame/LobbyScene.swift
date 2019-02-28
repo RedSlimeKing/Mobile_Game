@@ -22,37 +22,91 @@ class LobbyScene: SKScene {
         addChild(background)
         //Button to go to GameScene
         let buttonGameScene = UIButton(type: UIButtonType.system) as UIButton
-        buttonGameScene.frame = CGRect(x:size.width / 2 - 20, y:size.height/2, width:100, height:50)
+        buttonGameScene.frame = CGRect(x:size.width / 2 - 100, y:size.height/2 - 300, width:200, height:100)
         buttonGameScene.backgroundColor = UIColor.lightGray
         buttonGameScene.setTitle("Walk your pet!", for:.normal)
         buttonGameScene.tintColor = UIColor.black
         buttonGameScene.addTarget(self, action: #selector(movetoGameScene(_:)), for: .touchUpInside)
-        //Button to go to GameScene
+        //Button to go to Wash Scene
        
         let buttonWashScene = UIButton(type: UIButtonType.system) as UIButton
-        buttonWashScene.frame = CGRect(x:size.width / 2 - 20, y:size.height/2 - 100, width:100, height:50)
+        buttonWashScene.frame = CGRect(x:size.width / 2 - 100, y:size.height/2 - 150, width:200, height:100)
         buttonWashScene.backgroundColor = UIColor.lightGray
         buttonWashScene.setTitle("Wash your pet!", for:.normal)
         buttonWashScene.tintColor = UIColor.black
         buttonWashScene.addTarget(self, action: #selector(movetoWashScene(_:)), for: .touchUpInside)
+        
+        //Button to go to Wash Scene
+        
+        let buttonFeedingScene = UIButton(type: UIButtonType.system) as UIButton
+        buttonFeedingScene.frame = CGRect(x:size.width / 2 - 100, y:size.height/2 + 50, width:200, height:100)
+        buttonFeedingScene.backgroundColor = UIColor.lightGray
+        buttonFeedingScene.setTitle("Feed your pet!", for:.normal)
+        buttonFeedingScene.tintColor = UIColor.black
+        buttonFeedingScene.addTarget(self, action: #selector(movetoFeedingScene(_:)), for: .touchUpInside)
+        
+        let buttonPettingScene = UIButton(type: UIButtonType.system) as UIButton
+        buttonPettingScene.frame = CGRect(x:size.width / 2 - 100, y:size.height/2 + 250, width:200, height:100)
+        buttonPettingScene.backgroundColor = UIColor.lightGray
+        buttonPettingScene.setTitle("Play with your pet!", for:.normal)
+        buttonPettingScene.tintColor = UIColor.black
+        buttonPettingScene.addTarget(self, action: #selector(movetoPettingScene(_:)), for: .touchUpInside)
+        
+        
+        
+        
+        
         self.view?.addSubview(buttonGameScene)
         self.view?.addSubview(buttonWashScene)
+        self.view?.addSubview(buttonFeedingScene)
+        self.view?.addSubview(buttonPettingScene)
         
+        
+    }
+    func disableButtons(){
+        guard let subviews = self.view?.subviews else {
+            return
+        }
+        for view in subviews as [UIView] {
+            if let button = view as? UIButton {
+                button.isHidden = true
+                button.isEnabled = false
+            }
+        }
         
     }
     
     @objc func movetoGameScene(_ sender:UIButton!)
     {
         //SKView.presentScene(GameScene)
-      
+         disableButtons()
          let transition:SKTransition = SKTransition.fade(withDuration: 1)
          let scene:SKScene = GameScene(size: self.size)
          self.view?.presentScene(scene, transition: transition)
     }
+
+    
+    @objc func movetoFeedingScene(_ sender:UIButton!)
+    {
+        //SKView.presentScene(GameScene)
+        disableButtons()
+        let transition:SKTransition = SKTransition.fade(withDuration: 1)
+        let scene:SKScene = FeedingScene(size: self.size)
+        self.view?.presentScene(scene, transition: transition)
+    }
+    @objc func movetoPettingScene(_ sender:UIButton!)
+    {
+        //SKView.presentScene(GameScene)
+        disableButtons()
+        let transition:SKTransition = SKTransition.fade(withDuration: 1)
+        let scene:SKScene = PettingScene(size: self.size)
+        self.view?.presentScene(scene, transition: transition)
+    }
+    
     @objc func movetoWashScene(_ sender:UIButton!)
     {
         //SKView.presentScene(GameScene)
-        
+        disableButtons()
         let transition:SKTransition = SKTransition.fade(withDuration: 1)
         let scene:SKScene = WashScene(size: self.size)
         self.view?.presentScene(scene, transition: transition)
