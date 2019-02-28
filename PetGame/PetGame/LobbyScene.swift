@@ -36,26 +36,24 @@ class LobbyScene: SKScene {
         buttonWashScene.tintColor = UIColor.black
         buttonWashScene.addTarget(self, action: #selector(movetoWashScene(_:)), for: .touchUpInside)
         
-        //Button to go to Wash Scene
+        //Button to go to Feeding Scene
         
         let buttonFeedingScene = UIButton(type: UIButtonType.system) as UIButton
-        buttonFeedingScene.frame = CGRect(x:size.width / 2 - 100, y:size.height/2 + 50, width:200, height:100)
+        buttonFeedingScene.frame = CGRect(x:size.width / 2 - 100, y:size.height/2, width:200, height:100)
         buttonFeedingScene.backgroundColor = UIColor.lightGray
         buttonFeedingScene.setTitle("Feed your pet!", for:.normal)
         buttonFeedingScene.tintColor = UIColor.black
         buttonFeedingScene.addTarget(self, action: #selector(movetoFeedingScene(_:)), for: .touchUpInside)
         
+        //Button to go to Petting Scene
+        
         let buttonPettingScene = UIButton(type: UIButtonType.system) as UIButton
-        buttonPettingScene.frame = CGRect(x:size.width / 2 - 100, y:size.height/2 + 250, width:200, height:100)
+        buttonPettingScene.frame = CGRect(x:size.width / 2 - 100, y:size.height/2 + 150, width:200, height:100)
         buttonPettingScene.backgroundColor = UIColor.lightGray
         buttonPettingScene.setTitle("Play with your pet!", for:.normal)
         buttonPettingScene.tintColor = UIColor.black
         buttonPettingScene.addTarget(self, action: #selector(movetoPettingScene(_:)), for: .touchUpInside)
-        
-        
-        
-        
-        
+
         self.view?.addSubview(buttonGameScene)
         self.view?.addSubview(buttonWashScene)
         self.view?.addSubview(buttonFeedingScene)

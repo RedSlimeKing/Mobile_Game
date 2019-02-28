@@ -26,6 +26,14 @@ class GameScene: SKScene {
         
         player.zPosition = 1
         player.position = CGPoint(x: 400, y: 400)
+        let buttonLobbyScene = UIButton(type: UIButtonType.system) as UIButton
+        buttonLobbyScene.frame = CGRect(x:size.width / 2 + 150, y:size.height/2 + 300, width:50, height:50)
+        buttonLobbyScene.backgroundColor = UIColor.lightGray
+        buttonLobbyScene.setTitle("->", for:.normal)
+        buttonLobbyScene.tintColor = UIColor.black
+        buttonLobbyScene.addTarget(self, action: #selector(movetoLobbyScene(_:)), for: .touchUpInside)
+        
+        self.view?.addSubview(buttonLobbyScene)
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -37,4 +45,32 @@ class GameScene: SKScene {
             }
         }
     }
+    
+    func disableButtons(){
+        guard let subviews = self.view?.subviews else {
+            return
+        }
+        for view in subviews as [UIView] {
+            if let button = view as? UIButton {
+                button.isHidden = true
+                button.isEnabled = false
+            }
+        }
+        
+    }
+    
+    @objc func movetoLobbyScene(_ sender:UIButton!)
+    {
+        //SKView.presentScene(GameScene)
+        disableButtons()
+        let transition:SKTransition = SKTransition.fade(withDuration: 1)
+        let scene:SKScene = LobbyScene(size: self.size)
+        self.view?.presentScene(scene, transition: transition)
+    }
+
+    
+    
+    
+    
+    
 }
