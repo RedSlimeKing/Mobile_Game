@@ -10,10 +10,11 @@ import SpriteKit
 import GameplayKit
 import UIKit
 
-class LobbyScene: SKScene {
+class LobbyScene: SKScene{
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
+    var screenDelegate: ScreenSwitchable?
     
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.black
@@ -77,37 +78,33 @@ class LobbyScene: SKScene {
     @objc func movetoGameScene(_ sender:UIButton!)
     {
         //SKView.presentScene(GameScene)
-         disableButtons()
-         let transition:SKTransition = SKTransition.fade(withDuration: 1)
-         let scene:SKScene = GameScene(size: self.size)
-         self.view?.presentScene(scene, transition: transition)
+        screenDelegate?.SwitchScreens(string: "WalkingScene")
+        NotificationCenter.default.post(name: Notification.Name.didRecieveButtonInput, object:nil)
+        
     }
 
     
     @objc func movetoFeedingScene(_ sender:UIButton!)
     {
         //SKView.presentScene(GameScene)
-        disableButtons()
-        let transition:SKTransition = SKTransition.fade(withDuration: 1)
-        let scene:SKScene = FeedingScene(size: self.size)
-        self.view?.presentScene(scene, transition: transition)
+        screenDelegate?.SwitchScreens(string: "FeedingScene")
+        NotificationCenter.default.post(name: Notification.Name.didRecieveButtonInput, object:nil)
+        
     }
     @objc func movetoPettingScene(_ sender:UIButton!)
     {
         //SKView.presentScene(GameScene)
-        disableButtons()
-        let transition:SKTransition = SKTransition.fade(withDuration: 1)
-        let scene:SKScene = PettingScene(size: self.size)
-        self.view?.presentScene(scene, transition: transition)
+        screenDelegate?.SwitchScreens(string: "PettingScene")
+        NotificationCenter.default.post(name: Notification.Name.didRecieveButtonInput, object:nil)
     }
     
     @objc func movetoWashScene(_ sender:UIButton!)
     {
         //SKView.presentScene(GameScene)
-        disableButtons()
-        let transition:SKTransition = SKTransition.fade(withDuration: 1)
-        let scene:SKScene = WashScene(size: self.size)
-        self.view?.presentScene(scene, transition: transition)
+        
+        screenDelegate?.SwitchScreens(string: "WashScene")
+        NotificationCenter.default.post(name: Notification.Name.didRecieveButtonInput, object:nil)
+
     }
     override func update(_ currentTime: TimeInterval) {
         super.update(currentTime)

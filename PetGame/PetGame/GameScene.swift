@@ -13,7 +13,7 @@ class GameScene: SKScene {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
-    
+    var screenDelegate: ScreenSwitchable?
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.black
         let background = SKSpriteNode(imageNamed: "background1")
@@ -62,10 +62,8 @@ class GameScene: SKScene {
     @objc func movetoLobbyScene(_ sender:UIButton!)
     {
         //SKView.presentScene(GameScene)
-        disableButtons()
-        let transition:SKTransition = SKTransition.fade(withDuration: 1)
-        let scene:SKScene = LobbyScene(size: self.size)
-        self.view?.presentScene(scene, transition: transition)
+        NotificationCenter.default.post(name: Notification.Name.didRecieveButtonInput, object:nil)
+        screenDelegate?.SwitchScreens(string: "LobbyScene")
     }
 
     
