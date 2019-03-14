@@ -28,20 +28,32 @@ class PetData{
     }
     
     func GetHappiness() -> Double{
-        //let timeSinceFed = NSDate.timeIntervalSince(lastFed)
-        //let timeSinceWashed = NSDate.timeIntervalSince(lastWashed)
-        //let timeSinceWalked = NSDate.timeIntervalSince(lastWalked)
-        //let timeSincePlayedWith = NSDate.timeIntervalSince(lastPlayedWith)
-        return 1.0
+        return (GetHunger() + GetCleanliness() + GetWalked() + GetLoneliness()) / 4.0
     }
     
     func GetHunger() -> Double{
-        let timeSinceFed = lastFed.timeIntervalSinceNow
+        return GetValue(initialTime: lastFed, duration: hungerDuration)
+    }
+    
+    func GetCleanliness() -> Double{
+        return GetValue(initialTime: lastWashed, duration: washDuration)
+    }
+    
+    func GetWalked() -> Double{
+        return GetValue(initialTime: lastWalked, duration: walkDuration)
+    }
+    
+    func GetLoneliness() -> Double{
+        return GetValue(initialTime: lastPlayedWith, duration: playDuration)
+    }
+    
+    func GetValue(initialTime : NSDate, duration : Double) -> Double{
+        let timeSince = initialTime.timeIntervalSinceNow
         
-        if(timeSinceFed >= hungerDuration){
-            return 0.0;
+        if(timeSince >= duration){
+            return 0.0
         }
         
-        return 1.0 - (timeSinceFed / hungerDuration)
+        return 1.0 - (timeSince / duration)
     }
 }
