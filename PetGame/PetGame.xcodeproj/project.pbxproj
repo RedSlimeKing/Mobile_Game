@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36046CBA223AF6B800F7A920 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36046CB9223AF6B800F7A920 /* IntentHandler.swift */; };
+		36046CC2223AF6B800F7A920 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36046CC1223AF6B800F7A920 /* IntentsUI.framework */; };
+		36046CC5223AF6B800F7A920 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36046CC4223AF6B800F7A920 /* IntentViewController.swift */; };
+		36046CC8223AF6B800F7A920 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36046CC6223AF6B800F7A920 /* MainInterface.storyboard */; };
+		36046CCC223AF6B800F7A920 /* PetGameSiriUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36046CC0223AF6B800F7A920 /* PetGameSiriUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		36046CCF223AF6B800F7A920 /* PetGameSiri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36046CB7223AF6B800F7A920 /* PetGameSiri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D113FA6E220CE34E00DC6540 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6D220CE34E00DC6540 /* StoreKit.framework */; };
 		D113FA70220CE35800DC6540 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6F220CE35700DC6540 /* libsqlite3.tbd */; };
 		D113FA72220CE36400DC6540 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA71220CE36400DC6540 /* libz.tbd */; };
@@ -33,6 +39,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		36046CCA223AF6B800F7A920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1AFEDE4220CCABD0082FA6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36046CBF223AF6B800F7A920;
+			remoteInfo = PetGameSiriUI;
+		};
+		36046CCD223AF6B800F7A920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1AFEDE4220CCABD0082FA6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36046CB6223AF6B800F7A920;
+			remoteInfo = PetGameSiri;
+		};
 		D1AFEE07220CCABE0082FA6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D1AFEDE4220CCABD0082FA6B /* Project object */;
@@ -50,6 +70,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		36046CD6223AF6B800F7A920 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				36046CCC223AF6B800F7A920 /* PetGameSiriUI.appex in Embed App Extensions */,
+				36046CCF223AF6B800F7A920 /* PetGameSiri.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D113FA83220CE5B900DC6540 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,6 +95,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		36046CB1223AF3D900F7A920 /* PetGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PetGame.entitlements; sourceTree = "<group>"; };
+		36046CB7223AF6B800F7A920 /* PetGameSiri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PetGameSiri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		36046CB9223AF6B800F7A920 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		36046CBB223AF6B800F7A920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36046CC0223AF6B800F7A920 /* PetGameSiriUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PetGameSiriUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		36046CC1223AF6B800F7A920 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		36046CC4223AF6B800F7A920 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		36046CC7223AF6B800F7A920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		36046CC9223AF6B800F7A920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D113FA52220CDF1700DC6540 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D113FA6D220CE34E00DC6540 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D113FA6F220CE35700DC6540 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -97,6 +138,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		36046CB4223AF6B800F7A920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36046CBD223AF6B800F7A920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36046CC2223AF6B800F7A920 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1AFEDE9220CCABD0082FA6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,12 +188,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36046CB8223AF6B800F7A920 /* PetGameSiri */ = {
+			isa = PBXGroup;
+			children = (
+				36046CB9223AF6B800F7A920 /* IntentHandler.swift */,
+				36046CBB223AF6B800F7A920 /* Info.plist */,
+			);
+			path = PetGameSiri;
+			sourceTree = "<group>";
+		};
+		36046CC3223AF6B800F7A920 /* PetGameSiriUI */ = {
+			isa = PBXGroup;
+			children = (
+				36046CC4223AF6B800F7A920 /* IntentViewController.swift */,
+				36046CC6223AF6B800F7A920 /* MainInterface.storyboard */,
+				36046CC9223AF6B800F7A920 /* Info.plist */,
+			);
+			path = PetGameSiriUI;
+			sourceTree = "<group>";
+		};
 		D113FA53220CDFB600DC6540 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D113FA71220CE36400DC6540 /* libz.tbd */,
 				D113FA6F220CE35700DC6540 /* libsqlite3.tbd */,
 				D113FA6D220CE34E00DC6540 /* StoreKit.framework */,
+				36046CC1223AF6B800F7A920 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +224,8 @@
 				D1AFEDEE220CCABD0082FA6B /* PetGame */,
 				D1AFEE09220CCABE0082FA6B /* PetGameTests */,
 				D1AFEE14220CCABE0082FA6B /* PetGameUITests */,
+				36046CB8223AF6B800F7A920 /* PetGameSiri */,
+				36046CC3223AF6B800F7A920 /* PetGameSiriUI */,
 				D1AFEDED220CCABD0082FA6B /* Products */,
 				D113FA53220CDFB600DC6540 /* Frameworks */,
 			);
@@ -159,6 +237,8 @@
 				D1AFEDEC220CCABD0082FA6B /* PetGame.app */,
 				D1AFEE06220CCABE0082FA6B /* PetGameTests.xctest */,
 				D1AFEE11220CCABE0082FA6B /* PetGameUITests.xctest */,
+				36046CB7223AF6B800F7A920 /* PetGameSiri.appex */,
+				36046CC0223AF6B800F7A920 /* PetGameSiriUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +246,7 @@
 		D1AFEDEE220CCABD0082FA6B /* PetGame */ = {
 			isa = PBXGroup;
 			children = (
+				36046CB1223AF3D900F7A920 /* PetGame.entitlements */,
 				D113FA97220CEA7200DC6540 /* GoogleService-Info.plist */,
 				D113FA96220CE9AF00DC6540 /* Firebase.h */,
 				D113FA88220CE9A100DC6540 /* FIRAnalyticsConnector.framework */,
@@ -212,6 +293,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		36046CB6223AF6B800F7A920 /* PetGameSiri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36046CD3223AF6B800F7A920 /* Build configuration list for PBXNativeTarget "PetGameSiri" */;
+			buildPhases = (
+				36046CB3223AF6B800F7A920 /* Sources */,
+				36046CB4223AF6B800F7A920 /* Frameworks */,
+				36046CB5223AF6B800F7A920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetGameSiri;
+			productName = PetGameSiri;
+			productReference = 36046CB7223AF6B800F7A920 /* PetGameSiri.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		36046CBF223AF6B800F7A920 /* PetGameSiriUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36046CD0223AF6B800F7A920 /* Build configuration list for PBXNativeTarget "PetGameSiriUI" */;
+			buildPhases = (
+				36046CBC223AF6B800F7A920 /* Sources */,
+				36046CBD223AF6B800F7A920 /* Frameworks */,
+				36046CBE223AF6B800F7A920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetGameSiriUI;
+			productName = PetGameSiriUI;
+			productReference = 36046CC0223AF6B800F7A920 /* PetGameSiriUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D1AFEDEB220CCABD0082FA6B /* PetGame */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1AFEE1A220CCABE0082FA6B /* Build configuration list for PBXNativeTarget "PetGame" */;
@@ -220,10 +335,13 @@
 				D1AFEDE9220CCABD0082FA6B /* Frameworks */,
 				D1AFEDEA220CCABD0082FA6B /* Resources */,
 				D113FA83220CE5B900DC6540 /* Embed Frameworks */,
+				36046CD6223AF6B800F7A920 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				36046CCB223AF6B800F7A920 /* PBXTargetDependency */,
+				36046CCE223AF6B800F7A920 /* PBXTargetDependency */,
 			);
 			name = PetGame;
 			productName = PetGame;
@@ -276,8 +394,19 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Rennick Carter M.";
 				TargetAttributes = {
+					36046CB6223AF6B800F7A920 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					36046CBF223AF6B800F7A920 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					D1AFEDEB220CCABD0082FA6B = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					D1AFEE05220CCABE0082FA6B = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -305,11 +434,28 @@
 				D1AFEDEB220CCABD0082FA6B /* PetGame */,
 				D1AFEE05220CCABE0082FA6B /* PetGameTests */,
 				D1AFEE10220CCABE0082FA6B /* PetGameUITests */,
+				36046CB6223AF6B800F7A920 /* PetGameSiri */,
+				36046CBF223AF6B800F7A920 /* PetGameSiriUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		36046CB5223AF6B800F7A920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36046CBE223AF6B800F7A920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36046CC8223AF6B800F7A920 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1AFEDEA220CCABD0082FA6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +486,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		36046CB3223AF6B800F7A920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36046CBA223AF6B800F7A920 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36046CBC223AF6B800F7A920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36046CC5223AF6B800F7A920 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1AFEDE8220CCABD0082FA6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +532,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		36046CCB223AF6B800F7A920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36046CBF223AF6B800F7A920 /* PetGameSiriUI */;
+			targetProxy = 36046CCA223AF6B800F7A920 /* PBXContainerItemProxy */;
+		};
+		36046CCE223AF6B800F7A920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36046CB6223AF6B800F7A920 /* PetGameSiri */;
+			targetProxy = 36046CCD223AF6B800F7A920 /* PBXContainerItemProxy */;
+		};
 		D1AFEE08220CCABE0082FA6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D1AFEDEB220CCABD0082FA6B /* PetGame */;
@@ -383,6 +555,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		36046CC6223AF6B800F7A920 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36046CC7223AF6B800F7A920 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		D1AFEDF9220CCABD0082FA6B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -402,6 +582,82 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		36046CD1223AF6B800F7A920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PetGameSiriUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = humbercollege.PetGame.PetGameSiriUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36046CD2223AF6B800F7A920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PetGameSiriUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = humbercollege.PetGame.PetGameSiriUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		36046CD4223AF6B800F7A920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PetGameSiri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = humbercollege.PetGame.PetGameSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36046CD5223AF6B800F7A920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PetGameSiri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = humbercollege.PetGame.PetGameSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D1AFEE18220CCABE0082FA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -522,8 +778,11 @@
 		D1AFEE1B220CCABE0082FA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PetGame/PetGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -544,8 +803,11 @@
 		D1AFEE1C220CCABE0082FA6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PetGame/PetGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -644,6 +906,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		36046CD0223AF6B800F7A920 /* Build configuration list for PBXNativeTarget "PetGameSiriUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36046CD1223AF6B800F7A920 /* Debug */,
+				36046CD2223AF6B800F7A920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36046CD3223AF6B800F7A920 /* Build configuration list for PBXNativeTarget "PetGameSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36046CD4223AF6B800F7A920 /* Debug */,
+				36046CD5223AF6B800F7A920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D1AFEDE7220CCABD0082FA6B /* Build configuration list for PBXProject "PetGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
