@@ -26,11 +26,13 @@ class PetData{
         lastWalked = NSDate()
         lastPlayedWith = NSDate()
         
+        //Attempt to grab stored dates and times for when the pet was last cared for
         let lf = UserDefaults.standard.object(forKey: "LastFed")
         let lws = UserDefaults.standard.object(forKey: "LastWashed")
         let lwl = UserDefaults.standard.object(forKey: "LastWalked")
         let lpw = UserDefaults.standard.object(forKey: "LastPlayedWith")
         
+        //If the stored data exists and can be cast to an NSDate, use that instead of current date and time
         if let date = lf as? NSDate{
             lastFed = date
         }
@@ -88,5 +90,25 @@ class PetData{
         }
         
         return 1.0 - (timeSince / duration)
+    }
+    
+    func Feed() -> Void{
+        lastFed = NSDate()
+        StoreData()
+    }
+    
+    func Wash() -> Void{
+        lastWashed = NSDate()
+        StoreData()
+    }
+    
+    func Walk() -> Void{
+        lastWalked = NSDate()
+        StoreData()
+    }
+    
+    func Play() -> Void{
+        lastPlayedWith = NSDate()
+        StoreData()
     }
 }
