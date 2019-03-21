@@ -14,10 +14,10 @@ class PetData{
     var lastWalked : NSDate
     var lastPlayedWith : NSDate
     
-    let hungerDuration : Double = 600.0 //Time to zero hunger in seconds
-    let washDuration : Double = 600.0   //Time to zero clean in seconds
-    let walkDuration : Double = 600.0   //Time to zero tired in seconds
-    let playDuration : Double = 600.0   //Time to zero play in seconds
+    let hungerDuration : Double = 11.9 * 60.0 * 60.0 //Time to zero hunger in seconds
+    let washDuration : Double = 18.0 * 60.0 * 60.0   //Time to zero clean in seconds
+    let walkDuration : Double = 24.1 * 60.0 * 60.0   //Time to zero tired in seconds
+    let playDuration : Double = 48.2 * 60.0 * 60.0   //Time to zero play in seconds
     
     init(){
         //Set all our values to the current date and time initially
@@ -83,7 +83,7 @@ class PetData{
     }
     
     func GetValue(initialTime : NSDate, duration : Double) -> Double{
-        let timeSince = initialTime.timeIntervalSinceNow
+        let timeSince = abs(initialTime.timeIntervalSinceNow)
         
         if(timeSince >= duration){
             return 0.0
