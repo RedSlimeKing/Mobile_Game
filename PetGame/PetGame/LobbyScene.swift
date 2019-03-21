@@ -10,13 +10,14 @@ import SpriteKit
 import GameplayKit
 import UIKit
 
-class LobbyScene: SKScene{
+class LobbyScene: BaseScene{
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
-    var screenDelegate: ScreenSwitchable?
     
     override func didMove(to view: SKView) {
+        super.didMove(to: view)
+        
         backgroundColor = SKColor.black
         let background = SKSpriteNode(imageNamed: "lobbybackground")
         background.position = CGPoint(x: size.width / 2, y: size.height / 2 )
@@ -62,18 +63,6 @@ class LobbyScene: SKScene{
         
         
     }
-    func disableButtons(){
-        guard let subviews = self.view?.subviews else {
-            return
-        }
-        for view in subviews as [UIView] {
-            if let button = view as? UIButton {
-                button.isHidden = true
-                button.isEnabled = false
-            }
-        }
-        
-    }
     
     @objc func movetoGameScene(_ sender:UIButton!)
     {
@@ -105,14 +94,5 @@ class LobbyScene: SKScene{
         screenDelegate?.SwitchScreens(string: "WashScene")
         NotificationCenter.default.post(name: Notification.Name.didRecieveButtonInput, object:nil)
 
-    }
-    override func update(_ currentTime: TimeInterval) {
-        super.update(currentTime)
-        
-        self.children.forEach { (child) in
-            if let updatable = child as? Updatable{
-                updatable.update(currentTime)
-            }
-        }
     }
 }

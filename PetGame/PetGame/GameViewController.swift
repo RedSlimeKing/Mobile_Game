@@ -14,17 +14,19 @@ protocol ScreenSwitchable {
 }
 class GameViewController: UIViewController,ScreenSwitchable {
     
+    var currentScene : BaseScene?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let scene = LobbyScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
-        scene.screenDelegate = self
+        currentScene = LobbyScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
+        currentScene?.screenDelegate = self
         let skView = self.view as! SKView
         skView.showsFPS = true
         skView.showsNodeCount = true
         skView.ignoresSiblingOrder = true
-        scene.scaleMode = .aspectFill
-        skView.presentScene(scene)
+        currentScene?.scaleMode = .aspectFill
+        skView.presentScene(currentScene)
         
         NotificationCenter.default.addObserver(self, selector: #selector(disableButtons), name: Notification.Name.didRecieveButtonInput, object: nil)
 //        if let view = self.view as! SKView? {
@@ -52,41 +54,37 @@ class GameViewController: UIViewController,ScreenSwitchable {
         let skView = view as! SKView
         switch string {
         case "LobbyScene":
-            let lobbyScene = LobbyScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
-            lobbyScene.screenDelegate = self
-            skView.presentScene(lobbyScene)
+            currentScene = LobbyScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
         case "WashScene":
-            let washScene = WashScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
-            washScene.screenDelegate = self
-            skView.presentScene(washScene)
+            currentScene = WashScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
         case "FeedingScene":
-            let feedingScene = FeedingScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
-            feedingScene.screenDelegate = self
-            skView.presentScene(feedingScene)
+            currentScene = FeedingScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
         case "WalkingScene":
-            let walkingScene = GameScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
-            walkingScene.screenDelegate = self
-            skView.presentScene(walkingScene)
+            currentScene = GameScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
         case "PettingScene":
-            let pettingScene = PettingScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
-            pettingScene.screenDelegate = self
-            skView.presentScene(pettingScene)
+            currentScene = PettingScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
         default:
-            self.view = LobbyScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height )) as! SKView
+            break
+            //self.view = LobbyScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height )) as! SKView
         }
+        
+        currentScene?.screenDelegate = self
+        skView.presentScene(currentScene)
     }
     
     @objc func disableButtons(notification: Notification){
+        self.currentScene?.disableButtons()
+        
         //let data = notification.userInfo?["name"] as? String
-        guard let subviews = self.view?.subviews else {
-            return
-        }
-        for view in subviews as [UIView] {
-            if let button = view as? UIButton {
-                button.isHidden = true
-                button.isEnabled = false
-            }
-        }
+//        guard let subviews = self.view?.subviews else {
+//            return
+//        }
+//        for view in subviews as [UIView] {
+//            if let button = view as? UIButton {
+//                button.isHidden = true
+//                button.isEnabled = false
+//            }
+//        }
         
     }
     

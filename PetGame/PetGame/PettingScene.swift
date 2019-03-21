@@ -9,12 +9,14 @@
 import SpriteKit
 import GameplayKit
 
-class PettingScene: SKScene {
+class PettingScene: BaseScene {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
-    var screenDelegate: ScreenSwitchable?
+    
     override func didMove(to view: SKView) {
+        super.didMove(to: view)
+        
         backgroundColor = SKColor.black
         let background = SKSpriteNode(imageNamed: "pettingscenebackground")
         background.position = CGPoint(x: size.width / 2, y: size.height / 2 )
@@ -29,27 +31,10 @@ class PettingScene: SKScene {
         self.view?.addSubview(buttonLobbyScene)
     }
     
-    override func update(_ currentTime: TimeInterval) {
-        super.update(currentTime)
-        
-        self.children.forEach { (child) in
-            if let updatable = child as? Updatable{
-                updatable.update(currentTime)
-            }
-        }
-    }
-    
-    
-
-    
     @objc func movetoLobbyScene(_ sender:UIButton!)
     {
         //SKView.presentScene(GameScene)
         NotificationCenter.default.post(name: Notification.Name.didRecieveButtonInput, object:nil)
         screenDelegate?.SwitchScreens(string: "LobbyScene")
     }
-
-    
-    
-    
 }
