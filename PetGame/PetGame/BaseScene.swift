@@ -20,6 +20,11 @@ class BaseScene : SKScene{
         super.didMove(to: view)
     }
     
+    func MoveToScene(newScene : Scenes){
+        disableButtons()
+        screenDelegate?.SwitchScreens(string: newScene)
+    }
+    
     func disableButtons(){
         guard let subviews = self.view?.subviews else {
             return

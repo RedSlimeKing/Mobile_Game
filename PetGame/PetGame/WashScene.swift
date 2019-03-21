@@ -23,22 +23,20 @@ class WashScene: BaseScene {
         background.position = CGPoint(x: size.width / 2, y: size.height / 2 )
         addChild(background)
         
-        let buttonLobbyScene = UIButton(type: UIButtonType.system) as UIButton
-        buttonLobbyScene.frame = CGRect(x:size.width / 2 + 150, y:size.height/2 + 300, width:50, height:50)
-        buttonLobbyScene.backgroundColor = UIColor.lightGray
-        buttonLobbyScene.setTitle("->", for:.normal)
-        buttonLobbyScene.tintColor = UIColor.black
-        buttonLobbyScene.addTarget(self, action: #selector(movetoLobbyScene(_:)), for: .touchUpInside)
+        let testButton = SceneButton(text: "Back to Menu") {
+            self.MoveToScene(newScene: Scenes.lobby)
+        }
+        testButton.position = CGPoint(x: size.width / 2, y: size.height / 2 )
+        addChild(testButton)
         
-        self.view?.addSubview(buttonLobbyScene)
+//        let buttonLobbyScene = UIButton(type: UIButtonType.system) as UIButton
+//        buttonLobbyScene.frame = CGRect(x:size.width / 2 + 150, y:size.height/2 + 300, width:50, height:50)
+//        buttonLobbyScene.backgroundColor = UIColor.lightGray
+//        buttonLobbyScene.setTitle("->", for:.normal)
+//        buttonLobbyScene.tintColor = UIColor.black
+//        buttonLobbyScene.addTarget(self, action: #selector(movetoLobbyScene(_:)), for: .touchUpInside)
+        
+        //self.view?.addSubview(buttonLobbyScene)
 
-    }
-    
-    @objc func movetoLobbyScene(_ sender:UIButton!)
-    {
-        
-        //SKView.presentScene(GameScene)
-        NotificationCenter.default.post(name: Notification.Name.didRecieveButtonInput, object:nil)
-        screenDelegate?.SwitchScreens(string: "LobbyScene")
     }
 }

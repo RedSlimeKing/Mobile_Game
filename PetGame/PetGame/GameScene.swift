@@ -42,6 +42,6 @@ class GameScene: BaseScene {
     {
         //SKView.presentScene(GameScene)
         NotificationCenter.default.post(name: Notification.Name.didRecieveButtonInput, object:nil)
-        screenDelegate?.SwitchScreens(string: "LobbyScene")
+        screenDelegate?.SwitchScreens(string: Scenes.lobby)
     }
 }

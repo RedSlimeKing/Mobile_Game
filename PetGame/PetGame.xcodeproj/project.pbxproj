@@ -12,6 +12,7 @@
 		67FDD0E02216096F00928A34 /* WashScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0DF2216096F00928A34 /* WashScene.swift */; };
 		67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0E322160F5100928A34 /* LobbyScene.swift */; };
 		D1A2C20322442803005E86EB /* BaseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2C20222442803005E86EB /* BaseScene.swift */; };
+		D1A2C20522442E19005E86EB /* SceneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2C20422442E19005E86EB /* SceneButton.swift */; };
 		D1AFEDF0220CCABD0082FA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */; };
 		D1AFEDF2220CCABD0082FA6B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDF1220CCABD0082FA6B /* GameScene.sks */; };
 		D1AFEDF4220CCABD0082FA6B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDF3220CCABD0082FA6B /* Actions.sks */; };
@@ -48,6 +49,7 @@
 		67FDD0DF2216096F00928A34 /* WashScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashScene.swift; sourceTree = "<group>"; };
 		67FDD0E322160F5100928A34 /* LobbyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyScene.swift; sourceTree = "<group>"; };
 		D1A2C20222442803005E86EB /* BaseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScene.swift; sourceTree = "<group>"; };
+		D1A2C20422442E19005E86EB /* SceneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneButton.swift; sourceTree = "<group>"; };
 		D1AFEDEC220CCABD0082FA6B /* PetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1AFEDF1220CCABD0082FA6B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				67B82DE322288F8000BD5272 /* FeedingScene.swift */,
 				67B82DE5222890D900BD5272 /* PettingScene.swift */,
 				D1A2C20222442803005E86EB /* BaseScene.swift */,
+				D1A2C20422442E19005E86EB /* SceneButton.swift */,
 			);
 			path = PetGame;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */,
 				D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */,
 				67FDD0E02216096F00928A34 /* WashScene.swift in Sources */,
+				D1A2C20522442E19005E86EB /* SceneButton.swift in Sources */,
 				D1AFEDF8220CCABD0082FA6B /* GameViewController.swift in Sources */,
 				67B82DE6222890D900BD5272 /* PettingScene.swift in Sources */,
 				D1AFEDF0220CCABD0082FA6B /* AppDelegate.swift in Sources */,

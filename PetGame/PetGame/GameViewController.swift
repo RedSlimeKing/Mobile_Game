@@ -10,8 +10,17 @@ import UIKit
 import SpriteKit
 import GameplayKit
 protocol ScreenSwitchable {
-    func SwitchScreens(string: String)
+    func SwitchScreens(string: Scenes)
 }
+
+enum Scenes: String {
+    case lobby = "LobbyScene"
+    case wash = "WashScene"
+    case feeding = "FeedingScene"
+    case petting = "PettingScene"
+    case walking = "WalkingScene"
+}
+
 class GameViewController: UIViewController,ScreenSwitchable {
     
     var currentScene : BaseScene?
@@ -28,7 +37,6 @@ class GameViewController: UIViewController,ScreenSwitchable {
         currentScene?.scaleMode = .aspectFill
         skView.presentScene(currentScene)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(disableButtons), name: Notification.Name.didRecieveButtonInput, object: nil)
 //        if let view = self.view as! SKView? {
 //            // Load the SKScene from 'GameScene.sks'
 //            if let scene = SKScene(fileNamed: "GameScene") {
@@ -50,18 +58,18 @@ class GameViewController: UIViewController,ScreenSwitchable {
         return true
     }
     
-    func  SwitchScreens(string: String) {
+    func  SwitchScreens(string: Scenes) {
         let skView = view as! SKView
         switch string {
-        case "LobbyScene":
+        case .lobby:
             currentScene = LobbyScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
-        case "WashScene":
+        case .wash:
             currentScene = WashScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
-        case "FeedingScene":
+        case .feeding:
             currentScene = FeedingScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
-        case "WalkingScene":
+        case .walking:
             currentScene = GameScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
-        case "PettingScene":
+        case .petting:
             currentScene = PettingScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
         default:
             break
@@ -70,22 +78,6 @@ class GameViewController: UIViewController,ScreenSwitchable {
         
         currentScene?.screenDelegate = self
         skView.presentScene(currentScene)
-    }
-    
-    @objc func disableButtons(notification: Notification){
-        self.currentScene?.disableButtons()
-        
-        //let data = notification.userInfo?["name"] as? String
-//        guard let subviews = self.view?.subviews else {
-//            return
-//        }
-//        for view in subviews as [UIView] {
-//            if let button = view as? UIButton {
-//                button.isHidden = true
-//                button.isEnabled = false
-//            }
-//        }
-        
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
