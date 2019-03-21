@@ -13,6 +13,7 @@
 		36046CC8223AF6B800F7A920 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36046CC6223AF6B800F7A920 /* MainInterface.storyboard */; };
 		36046CCC223AF6B800F7A920 /* PetGameSiriUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36046CC0223AF6B800F7A920 /* PetGameSiriUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		36046CCF223AF6B800F7A920 /* PetGameSiri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36046CB7223AF6B800F7A920 /* PetGameSiri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		367E315B22442068006DCE1F /* PetGameSiriHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E315A22442068006DCE1F /* PetGameSiriHandler.swift */; };
 		D113FA6E220CE34E00DC6540 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6D220CE34E00DC6540 /* StoreKit.framework */; };
 		D113FA70220CE35800DC6540 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6F220CE35700DC6540 /* libsqlite3.tbd */; };
 		D113FA72220CE36400DC6540 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA71220CE36400DC6540 /* libz.tbd */; };
@@ -104,6 +105,7 @@
 		36046CC4223AF6B800F7A920 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		36046CC7223AF6B800F7A920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		36046CC9223AF6B800F7A920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		367E315A22442068006DCE1F /* PetGameSiriHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetGameSiriHandler.swift; sourceTree = "<group>"; };
 		D113FA52220CDF1700DC6540 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D113FA6D220CE34E00DC6540 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D113FA6F220CE35700DC6540 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -193,6 +195,7 @@
 			children = (
 				36046CB9223AF6B800F7A920 /* IntentHandler.swift */,
 				36046CBB223AF6B800F7A920 /* Info.plist */,
+				367E315A22442068006DCE1F /* PetGameSiriHandler.swift */,
 			);
 			path = PetGameSiri;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36046CBA223AF6B800F7A920 /* IntentHandler.swift in Sources */,
+				367E315B22442068006DCE1F /* PetGameSiriHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
