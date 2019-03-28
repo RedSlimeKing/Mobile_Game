@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67B82DE422288F8000BD5272 /* FeedingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE322288F8000BD5272 /* FeedingScene.swift */; };
+		67B82DE6222890D900BD5272 /* PettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE5222890D900BD5272 /* PettingScene.swift */; };
+		67FDD0E02216096F00928A34 /* WashScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0DF2216096F00928A34 /* WashScene.swift */; };
+		67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0E322160F5100928A34 /* LobbyScene.swift */; };
 		D113FA6E220CE34E00DC6540 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6D220CE34E00DC6540 /* StoreKit.framework */; };
 		D113FA70220CE35800DC6540 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6F220CE35700DC6540 /* libsqlite3.tbd */; };
 		D113FA72220CE36400DC6540 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA71220CE36400DC6540 /* libz.tbd */; };
@@ -19,16 +23,11 @@
 		D113FA94220CE9A200DC6540 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA8C220CE9A100DC6540 /* nanopb.framework */; };
 		D113FA95220CE9A200DC6540 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA8D220CE9A100DC6540 /* FirebaseInstanceID.framework */; };
 		D113FA98220CEA7200DC6540 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D113FA97220CEA7200DC6540 /* GoogleService-Info.plist */; };
-		67B82DE422288F8000BD5272 /* FeedingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE322288F8000BD5272 /* FeedingScene.swift */; };
-		67B82DE6222890D900BD5272 /* PettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE5222890D900BD5272 /* PettingScene.swift */; };
-		67FDD0E02216096F00928A34 /* WashScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0DF2216096F00928A34 /* WashScene.swift */; };
-		67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0E322160F5100928A34 /* LobbyScene.swift */; };
 		D1A2C20322442803005E86EB /* BaseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2C20222442803005E86EB /* BaseScene.swift */; };
 		D1A2C20522442E19005E86EB /* SceneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2C20422442E19005E86EB /* SceneButton.swift */; };
 		D1AFEDF0220CCABD0082FA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */; };
 		D1AFEDF2220CCABD0082FA6B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDF1220CCABD0082FA6B /* GameScene.sks */; };
 		D1AFEDF4220CCABD0082FA6B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDF3220CCABD0082FA6B /* Actions.sks */; };
-		D1AFEDF6220CCABD0082FA6B /* WalkScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEDF5220CCABD0082FA6B /* WalkScene.swift */; };
 		D1AFEDF8220CCABD0082FA6B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEDF7220CCABD0082FA6B /* GameViewController.swift */; };
 		D1AFEDFB220CCABD0082FA6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDF9220CCABD0082FA6B /* Main.storyboard */; };
 		D1AFEDFD220CCABE0082FA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDFC220CCABE0082FA6B /* Assets.xcassets */; };
@@ -36,6 +35,7 @@
 		D1AFEE0B220CCABE0082FA6B /* PetGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEE0A220CCABE0082FA6B /* PetGameTests.swift */; };
 		D1AFEE16220CCABE0082FA6B /* PetGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEE15220CCABE0082FA6B /* PetGameUITests.swift */; };
 		D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEE23220CCFD90082FA6B /* Zombie.swift */; };
+		D1B8C221224D566A000E920D /* WalkScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8C220224D566A000E920D /* WalkScene.swift */; };
 		D1C577C82231B15000AE7A33 /* PetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C577C72231B15000AE7A33 /* PetData.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +70,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		67B82DE322288F8000BD5272 /* FeedingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingScene.swift; sourceTree = "<group>"; };
+		67B82DE5222890D900BD5272 /* PettingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PettingScene.swift; sourceTree = "<group>"; };
+		67FDD0DF2216096F00928A34 /* WashScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashScene.swift; sourceTree = "<group>"; };
+		67FDD0E322160F5100928A34 /* LobbyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyScene.swift; sourceTree = "<group>"; };
 		D113FA52220CDF1700DC6540 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D113FA6D220CE34E00DC6540 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D113FA6F220CE35700DC6540 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -84,17 +88,12 @@
 		D113FA8D220CE9A100DC6540 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		D113FA96220CE9AF00DC6540 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
 		D113FA97220CEA7200DC6540 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		67B82DE322288F8000BD5272 /* FeedingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingScene.swift; sourceTree = "<group>"; };
-		67B82DE5222890D900BD5272 /* PettingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PettingScene.swift; sourceTree = "<group>"; };
-		67FDD0DF2216096F00928A34 /* WashScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashScene.swift; sourceTree = "<group>"; };
-		67FDD0E322160F5100928A34 /* LobbyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyScene.swift; sourceTree = "<group>"; };
 		D1A2C20222442803005E86EB /* BaseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScene.swift; sourceTree = "<group>"; };
 		D1A2C20422442E19005E86EB /* SceneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneButton.swift; sourceTree = "<group>"; };
 		D1AFEDEC220CCABD0082FA6B /* PetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1AFEDF1220CCABD0082FA6B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		D1AFEDF3220CCABD0082FA6B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		D1AFEDF5220CCABD0082FA6B /* WalkScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkScene.swift; sourceTree = "<group>"; };
 		D1AFEDF7220CCABD0082FA6B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D1AFEDFA220CCABD0082FA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1AFEDFC220CCABE0082FA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +106,7 @@
 		D1AFEE15220CCABE0082FA6B /* PetGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetGameUITests.swift; sourceTree = "<group>"; };
 		D1AFEE17220CCABE0082FA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1AFEE23220CCFD90082FA6B /* Zombie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
+		D1B8C220224D566A000E920D /* WalkScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkScene.swift; sourceTree = "<group>"; };
 		D1C577C72231B15000AE7A33 /* PetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,13 +195,13 @@
 				D1AFEDF1220CCABD0082FA6B /* GameScene.sks */,
 				D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */,
 				D1AFEDF3220CCABD0082FA6B /* Actions.sks */,
-				D1AFEDF5220CCABD0082FA6B /* WalkScene.swift */,
 				D1AFEDF7220CCABD0082FA6B /* GameViewController.swift */,
 				D1AFEDF9220CCABD0082FA6B /* Main.storyboard */,
 				D1AFEDFC220CCABE0082FA6B /* Assets.xcassets */,
 				D1AFEDFE220CCABE0082FA6B /* LaunchScreen.storyboard */,
 				D1AFEE01220CCABE0082FA6B /* Info.plist */,
 				D1AFEE23220CCFD90082FA6B /* Zombie.swift */,
+				D1B8C220224D566A000E920D /* WalkScene.swift */,
 				67FDD0DF2216096F00928A34 /* WashScene.swift */,
 				67FDD0E322160F5100928A34 /* LobbyScene.swift */,
 				67B82DE322288F8000BD5272 /* FeedingScene.swift */,
@@ -366,9 +366,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1C577C82231B15000AE7A33 /* PetData.swift in Sources */,
-				D1AFEDF6220CCABD0082FA6B /* GameScene.swift in Sources */,
-				D1AFEDF6220CCABD0082FA6B /* WalkScene.swift in Sources */,
 				D1A2C20322442803005E86EB /* BaseScene.swift in Sources */,
+				D1B8C221224D566A000E920D /* WalkScene.swift in Sources */,
 				67B82DE422288F8000BD5272 /* FeedingScene.swift in Sources */,
 				67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */,
 				D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */,
