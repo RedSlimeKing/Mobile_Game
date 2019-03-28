@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D113FA6E220CE34E00DC6540 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6D220CE34E00DC6540 /* StoreKit.framework */; };
+		D113FA70220CE35800DC6540 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6F220CE35700DC6540 /* libsqlite3.tbd */; };
+		D113FA72220CE36400DC6540 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA71220CE36400DC6540 /* libz.tbd */; };
+		D113FA8E220CE9A100DC6540 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA86220CE9A100DC6540 /* FirebaseAnalytics.framework */; };
+		D113FA8F220CE9A200DC6540 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA87220CE9A100DC6540 /* GoogleAppMeasurement.framework */; };
+		D113FA90220CE9A200DC6540 /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA88220CE9A100DC6540 /* FIRAnalyticsConnector.framework */; };
+		D113FA91220CE9A200DC6540 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA89220CE9A100DC6540 /* FirebaseCoreDiagnostics.framework */; };
+		D113FA92220CE9A200DC6540 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA8A220CE9A100DC6540 /* FirebaseCore.framework */; };
+		D113FA93220CE9A200DC6540 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA8B220CE9A100DC6540 /* GoogleUtilities.framework */; };
+		D113FA94220CE9A200DC6540 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA8C220CE9A100DC6540 /* nanopb.framework */; };
+		D113FA95220CE9A200DC6540 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA8D220CE9A100DC6540 /* FirebaseInstanceID.framework */; };
+		D113FA98220CEA7200DC6540 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D113FA97220CEA7200DC6540 /* GoogleService-Info.plist */; };
 		67B82DE422288F8000BD5272 /* FeedingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE322288F8000BD5272 /* FeedingScene.swift */; };
 		67B82DE6222890D900BD5272 /* PettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE5222890D900BD5272 /* PettingScene.swift */; };
 		67FDD0E02216096F00928A34 /* WashScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0DF2216096F00928A34 /* WashScene.swift */; };
@@ -24,6 +36,7 @@
 		D1AFEE0B220CCABE0082FA6B /* PetGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEE0A220CCABE0082FA6B /* PetGameTests.swift */; };
 		D1AFEE16220CCABE0082FA6B /* PetGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEE15220CCABE0082FA6B /* PetGameUITests.swift */; };
 		D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEE23220CCFD90082FA6B /* Zombie.swift */; };
+		D1C577C82231B15000AE7A33 /* PetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C577C72231B15000AE7A33 /* PetData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +56,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D113FA83220CE5B900DC6540 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D113FA52220CDF1700DC6540 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		D113FA6D220CE34E00DC6540 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D113FA6F220CE35700DC6540 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D113FA71220CE36400DC6540 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D113FA86220CE9A100DC6540 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		D113FA87220CE9A100DC6540 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		D113FA88220CE9A100DC6540 /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
+		D113FA89220CE9A100DC6540 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		D113FA8A220CE9A100DC6540 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		D113FA8B220CE9A100DC6540 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		D113FA8C220CE9A100DC6540 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		D113FA8D220CE9A100DC6540 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		D113FA96220CE9AF00DC6540 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		D113FA97220CEA7200DC6540 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		67B82DE322288F8000BD5272 /* FeedingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingScene.swift; sourceTree = "<group>"; };
 		67B82DE5222890D900BD5272 /* PettingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PettingScene.swift; sourceTree = "<group>"; };
 		67FDD0DF2216096F00928A34 /* WashScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashScene.swift; sourceTree = "<group>"; };
@@ -67,6 +107,7 @@
 		D1AFEE15220CCABE0082FA6B /* PetGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetGameUITests.swift; sourceTree = "<group>"; };
 		D1AFEE17220CCABE0082FA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1AFEE23220CCFD90082FA6B /* Zombie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
+		D1C577C72231B15000AE7A33 /* PetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +115,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D113FA93220CE9A200DC6540 /* GoogleUtilities.framework in Frameworks */,
+				D113FA8E220CE9A100DC6540 /* FirebaseAnalytics.framework in Frameworks */,
+				D113FA94220CE9A200DC6540 /* nanopb.framework in Frameworks */,
+				D113FA90220CE9A200DC6540 /* FIRAnalyticsConnector.framework in Frameworks */,
+				D113FA95220CE9A200DC6540 /* FirebaseInstanceID.framework in Frameworks */,
+				D113FA72220CE36400DC6540 /* libz.tbd in Frameworks */,
+				D113FA8F220CE9A200DC6540 /* GoogleAppMeasurement.framework in Frameworks */,
+				D113FA92220CE9A200DC6540 /* FirebaseCore.framework in Frameworks */,
+				D113FA91220CE9A200DC6540 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				D113FA70220CE35800DC6540 /* libsqlite3.tbd in Frameworks */,
+				D113FA6E220CE34E00DC6540 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +146,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D113FA53220CDFB600DC6540 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D113FA71220CE36400DC6540 /* libz.tbd */,
+				D113FA6F220CE35700DC6540 /* libsqlite3.tbd */,
+				D113FA6D220CE34E00DC6540 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1AFEDE3220CCABD0082FA6B = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +163,7 @@
 				D1AFEE09220CCABE0082FA6B /* PetGameTests */,
 				D1AFEE14220CCABE0082FA6B /* PetGameUITests */,
 				D1AFEDED220CCABD0082FA6B /* Products */,
+				D113FA53220CDFB600DC6540 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +180,18 @@
 		D1AFEDEE220CCABD0082FA6B /* PetGame */ = {
 			isa = PBXGroup;
 			children = (
+				D1C577C72231B15000AE7A33 /* PetData.swift */,
+				D113FA97220CEA7200DC6540 /* GoogleService-Info.plist */,
+				D113FA96220CE9AF00DC6540 /* Firebase.h */,
+				D113FA88220CE9A100DC6540 /* FIRAnalyticsConnector.framework */,
+				D113FA86220CE9A100DC6540 /* FirebaseAnalytics.framework */,
+				D113FA8A220CE9A100DC6540 /* FirebaseCore.framework */,
+				D113FA89220CE9A100DC6540 /* FirebaseCoreDiagnostics.framework */,
+				D113FA8D220CE9A100DC6540 /* FirebaseInstanceID.framework */,
+				D113FA87220CE9A100DC6540 /* GoogleAppMeasurement.framework */,
+				D113FA8B220CE9A100DC6540 /* GoogleUtilities.framework */,
+				D113FA8C220CE9A100DC6540 /* nanopb.framework */,
+				D113FA52220CDF1700DC6540 /* module.modulemap */,
 				D1AFEDF1220CCABD0082FA6B /* GameScene.sks */,
 				D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */,
 				D1AFEDF3220CCABD0082FA6B /* Actions.sks */,
@@ -165,6 +240,7 @@
 				D1AFEDE8220CCABD0082FA6B /* Sources */,
 				D1AFEDE9220CCABD0082FA6B /* Frameworks */,
 				D1AFEDEA220CCABD0082FA6B /* Resources */,
+				D113FA83220CE5B900DC6540 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +340,7 @@
 				D1AFEDFD220CCABE0082FA6B /* Assets.xcassets in Resources */,
 				D1AFEE00220CCABE0082FA6B /* LaunchScreen.storyboard in Resources */,
 				D1AFEDF4220CCABD0082FA6B /* Actions.sks in Resources */,
+				D113FA98220CEA7200DC6540 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +365,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1C577C82231B15000AE7A33 /* PetData.swift in Sources */,
+				D1AFEDF6220CCABD0082FA6B /* GameScene.swift in Sources */,
 				D1AFEDF6220CCABD0082FA6B /* WalkScene.swift in Sources */,
 				D1A2C20322442803005E86EB /* BaseScene.swift in Sources */,
 				67B82DE422288F8000BD5272 /* FeedingScene.swift in Sources */,
@@ -406,9 +485,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
 			};
 			name = Debug;
 		};
@@ -459,6 +540,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -471,6 +553,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PetGame",
+				);
 				INFOPLIST_FILE = PetGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,6 +575,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PetGame",
+				);
 				INFOPLIST_FILE = PetGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
