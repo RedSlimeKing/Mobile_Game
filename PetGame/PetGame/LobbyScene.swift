@@ -20,32 +20,32 @@ class LobbyScene: BaseScene{
         
         backgroundColor = SKColor.black
         let background = SKSpriteNode(imageNamed: "lobbybackground")
-        background.position = CGPoint(x: size.width / 2, y: size.height / 2 )
+        background.position = CGPoint(x: size.width / 2, y: size.height / 2)
         addChild(background)
         //Button to go to GameScene
         
         let buttonGameScene = SceneButton(text: "Walk your dog") {
             self.MoveToScene(newScene: Scenes.walking)
         }
-        buttonGameScene.position = CGPoint(x: self.size.width / 2 - 100, y: self.size.height / 2 - 300)
-        addChild(buttonGameScene)
+        buttonGameScene.position = CGPoint(x: 0, y: 250)
+        background.addChild(buttonGameScene)
         
         let buttonWashScene = SceneButton(text: "Wash your dog") {
             self.MoveToScene(newScene: Scenes.wash)
         }
-        buttonWashScene.position = CGPoint(x: size.width / 2 - 100, y: size.height / 2 - 150)
-        addChild(buttonWashScene)
+        buttonWashScene.position = CGPoint(x: 0, y: 100)
+        background.addChild(buttonWashScene)
         
         let buttonFeedingScene = SceneButton(text: "Feed your dog") {
             self.MoveToScene(newScene: Scenes.feeding)
         }
-        buttonFeedingScene.position = CGPoint(x: size.width / 2 - 100, y: size.height/2)
-        addChild(buttonFeedingScene)
+        buttonFeedingScene.position = CGPoint(x: 0, y: -50)
+        background.addChild(buttonFeedingScene)
         
         let buttonPettingScene = SceneButton(text: "Pet your dog") {
             self.MoveToScene(newScene: Scenes.petting)
         }
-        buttonPettingScene.position = CGPoint(x: size.width / 2 - 100, y: size.height/2)
-        addChild(buttonPettingScene)
+        buttonPettingScene.position = CGPoint(x: 0, y: -200)
+        background.addChild(buttonPettingScene)
     }
 }
