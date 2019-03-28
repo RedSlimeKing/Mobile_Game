@@ -16,14 +16,19 @@ class SceneButton : SKSpriteNode{
     init(text: String, clickEvent: @escaping ()-> Void ){
         let texture = SKTexture.init(imageNamed: "button")
         label = SKLabelNode(text: text)
-        label.fontColor = UIColor.blue
+        label.fontColor = UIColor.white
         label.fontName = "Arial-BoldMT"
         self.clickEvent = clickEvent
         super.init(texture: texture, color: UIColor.clear, size: texture.size())
         
         self.isUserInteractionEnabled = true
-        self.size.width = self.size.width / 4
-        self.size.height = self.size.height / 4
+        self.size.width = self.size.width / 5.0
+        self.size.height = self.size.height / 5.0
+        self.zPosition = 1.0
+        
+        label.position = CGPoint(x: 0.0, y: -7.5)
+        label.fontSize = 24.0
+        label.zPosition = 2.0
         addChild(label)
     }
     

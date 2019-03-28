@@ -1,15 +1,15 @@
 //
-//  PettingScene.swift
+//  GameScene.swift
 //  PetGame
 //
-//  Created by Gallagher Sean D. on 2/28/19.
+//  Created by Rennick Carter M. on 2/7/19.
 //  Copyright © 2019 Rennick Carter M. All rights reserved.
 //
 
 import SpriteKit
 import GameplayKit
 
-class PettingScene: BaseScene {
+class WalkScene: BaseScene {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
@@ -18,14 +18,14 @@ class PettingScene: BaseScene {
         super.didMove(to: view)
         
         backgroundColor = SKColor.black
-        let background = SKSpriteNode(imageNamed: "pettingscenebackground")
+        let background = SKSpriteNode(imageNamed: "background1")
         background.position = CGPoint(x: size.width / 2, y: size.height / 2 )
         addChild(background)
         
-        let testButton = SceneButton(text: "Back to Menu") {
+        let backToMenuButton = SceneButton(text: "Back to Menu") {
             self.MoveToScene(newScene: Scenes.lobby)
         }
-        testButton.position = CGPoint(x: 100, y: -300 )
-        background.addChild(testButton)
+        backToMenuButton.position = CGPoint(x: 100, y: -300)
+        background.addChild(backToMenuButton)
     }
 }

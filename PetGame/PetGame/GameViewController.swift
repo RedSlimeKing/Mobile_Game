@@ -68,7 +68,7 @@ class GameViewController: UIViewController,ScreenSwitchable {
         case .feeding:
             currentScene = FeedingScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
         case .walking:
-            currentScene = GameScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
+            currentScene = WalkScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
         case .petting:
             currentScene = PettingScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
         default:

@@ -21,21 +21,7 @@ class BaseScene : SKScene{
     }
     
     func MoveToScene(newScene : Scenes){
-        disableButtons()
         screenDelegate?.SwitchScreens(string: newScene)
-    }
-    
-    func disableButtons(){
-        guard let subviews = self.view?.subviews else {
-            return
-        }
-        
-        for view in subviews as [UIView] {
-            if let button = view as? UIButton {
-                button.isHidden = true
-                button.isEnabled = false
-            }
-        }
     }
     
     override func update(_ currentTime: TimeInterval){

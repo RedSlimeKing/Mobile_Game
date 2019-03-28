@@ -21,6 +21,7 @@ class LobbyScene: BaseScene{
         backgroundColor = SKColor.black
         let background = SKSpriteNode(imageNamed: "lobbybackground")
         background.position = CGPoint(x: size.width / 2, y: size.height / 2)
+        background.zPosition = -1.0
         addChild(background)
         //Button to go to GameScene
         
