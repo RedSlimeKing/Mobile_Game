@@ -148,6 +148,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1013672225A7EAC000DE2EB /* Washing */ = {
+			isa = PBXGroup;
+			children = (
+				D1013670225A6FE3000DE2EB /* WashPet.swift */,
+				67FDD0DF2216096F00928A34 /* WashScene.swift */,
+			);
+			path = Washing;
+			sourceTree = "<group>";
+		};
 		D113FA53220CDFB600DC6540 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +191,7 @@
 		D1AFEDEE220CCABD0082FA6B /* PetGame */ = {
 			isa = PBXGroup;
 			children = (
+				D1013672225A7EAC000DE2EB /* Washing */,
 				D1C577C72231B15000AE7A33 /* PetData.swift */,
 				D113FA97220CEA7200DC6540 /* GoogleService-Info.plist */,
 				D113FA96220CE9AF00DC6540 /* Firebase.h */,
@@ -204,13 +214,11 @@
 				D1AFEE01220CCABE0082FA6B /* Info.plist */,
 				D1AFEE23220CCFD90082FA6B /* Zombie.swift */,
 				D1B8C220224D566A000E920D /* WalkScene.swift */,
-				67FDD0DF2216096F00928A34 /* WashScene.swift */,
 				67FDD0E322160F5100928A34 /* LobbyScene.swift */,
 				67B82DE322288F8000BD5272 /* FeedingScene.swift */,
 				67B82DE5222890D900BD5272 /* PettingScene.swift */,
 				D1A2C20222442803005E86EB /* BaseScene.swift */,
 				D1A2C20422442E19005E86EB /* SceneButton.swift */,
-				D1013670225A6FE3000DE2EB /* WashPet.swift */,
 			);
 			path = PetGame;
 			sourceTree = "<group>";
