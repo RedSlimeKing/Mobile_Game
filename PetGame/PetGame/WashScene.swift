@@ -24,10 +24,9 @@ class WashScene: BaseScene{
         testButton.position = CGPoint(x: 100, y: -300 )
         background.addChild(testButton)
         
-        let block = SKSpriteNode(color: UIColor.black, size: CGSize(width: 100, height: 100)) //Temporary, replace with the actual pet
-        block.position = CGPoint(x: 0, y: 0)
-        block.zPosition = 100
-        background.addChild(block)
+        let pet = WashPet(petTexture: "button")
+        pet.position = CGPoint(x: 0, y: 0)
+        background.addChild(pet)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
