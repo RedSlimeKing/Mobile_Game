@@ -10,6 +10,8 @@ import SpriteKit
 import GameplayKit
 
 class WashScene: BaseScene{
+    var pet : WashPet? = nil
+    
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         
@@ -24,9 +26,11 @@ class WashScene: BaseScene{
         testButton.position = CGPoint(x: 100, y: -300 )
         background.addChild(testButton)
         
-        let pet = WashPet(petTexture: "button")
-        pet.position = CGPoint(x: 0, y: 0)
-        background.addChild(pet)
+        if let petObj = WashPet(petTexture: "button") as WashPet?{
+            pet = petObj
+            petObj.position = CGPoint(x: 0, y: 0)
+            background.addChild(petObj)
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -35,5 +39,12 @@ class WashScene: BaseScene{
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesMoved(touches, with: event)
+    }
+    
+    override func update(_ currentTime: TimeInterval){
+        if(pet?.IsBeingTouched())!{
+        }
+        
+        super.update(currentTime)
     }
 }
