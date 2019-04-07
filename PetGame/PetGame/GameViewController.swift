@@ -71,9 +71,6 @@ class GameViewController: UIViewController,ScreenSwitchable {
             currentScene = WalkScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
         case .petting:
             currentScene = PettingScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
-        default:
-            break
-            //self.view = LobbyScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height )) as! SKView
         }
         
         currentScene?.screenDelegate = self
