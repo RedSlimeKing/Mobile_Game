@@ -11,6 +11,7 @@
 		67B82DE6222890D900BD5272 /* PettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE5222890D900BD5272 /* PettingScene.swift */; };
 		67FDD0E02216096F00928A34 /* WashScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0DF2216096F00928A34 /* WashScene.swift */; };
 		67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0E322160F5100928A34 /* LobbyScene.swift */; };
+		D1013671225A6FE3000DE2EB /* WashPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1013670225A6FE3000DE2EB /* WashPet.swift */; };
 		D113FA6E220CE34E00DC6540 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6D220CE34E00DC6540 /* StoreKit.framework */; };
 		D113FA70220CE35800DC6540 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6F220CE35700DC6540 /* libsqlite3.tbd */; };
 		D113FA72220CE36400DC6540 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA71220CE36400DC6540 /* libz.tbd */; };
@@ -74,6 +75,7 @@
 		67B82DE5222890D900BD5272 /* PettingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PettingScene.swift; sourceTree = "<group>"; };
 		67FDD0DF2216096F00928A34 /* WashScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashScene.swift; sourceTree = "<group>"; };
 		67FDD0E322160F5100928A34 /* LobbyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyScene.swift; sourceTree = "<group>"; };
+		D1013670225A6FE3000DE2EB /* WashPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashPet.swift; sourceTree = "<group>"; };
 		D113FA52220CDF1700DC6540 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D113FA6D220CE34E00DC6540 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D113FA6F220CE35700DC6540 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -208,6 +210,7 @@
 				67B82DE5222890D900BD5272 /* PettingScene.swift */,
 				D1A2C20222442803005E86EB /* BaseScene.swift */,
 				D1A2C20422442E19005E86EB /* SceneButton.swift */,
+				D1013670225A6FE3000DE2EB /* WashPet.swift */,
 			);
 			path = PetGame;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				D1A2C20322442803005E86EB /* BaseScene.swift in Sources */,
 				D1B8C221224D566A000E920D /* WalkScene.swift in Sources */,
 				67B82DE422288F8000BD5272 /* FeedingScene.swift in Sources */,
+				D1013671225A6FE3000DE2EB /* WashPet.swift in Sources */,
 				67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */,
 				D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */,
 				67FDD0E02216096F00928A34 /* WashScene.swift in Sources */,

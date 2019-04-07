@@ -10,8 +10,12 @@ import Foundation
 
 import SpriteKit
 
-class WashPet : SKSpriteNode{
+class WashPet : SKSpriteNode, Updatable{
+    private var isBeingTouched : Bool
+    
     init(petTexture: String){
+        isBeingTouched = false
+        
         let texture = SKTexture.init(imageNamed: petTexture)
         super.init(texture: texture, color: UIColor.clear, size: texture.size())
         
@@ -25,7 +29,16 @@ class WashPet : SKSpriteNode{
         fatalError("init(coder:) has not been implemented")
     }
     
+    func IsBeingTouched() -> Bool{
+        return isBeingTouched
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         super.touchesBegan(touches, with: event)
+        isBeingTouched = true
+    }
+    
+    func update(_ currentTime: TimeInterval){
+        isBeingTouched = false
     }
 }
