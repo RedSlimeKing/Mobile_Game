@@ -35,18 +35,18 @@ class FeedingScene: BaseScene {
             print("dog really likes steak")
             self.MoveButton()
             let dogSteak = SKSpriteNode(imageNamed: "dogsteak")
-            dogSteak.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 )
+            dogSteak.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 - 200 )
             dogSteak.size = CGSize(width:200,height:200)
-            dogSteak.zPosition = 1.0
+            dogSteak.zPosition = 0.5
             self.addChild(dogSteak)
         }
         iceCreamButton = SceneButton(text: "Ice Cream") {
             print("dog is sick now")
             self.MoveButton()
             let dogIceCream = SKSpriteNode(imageNamed: "dogicecream")
-            dogIceCream.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 )
+            dogIceCream.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 - 200)
             dogIceCream.size = CGSize(width:200,height:200)
-            dogIceCream.zPosition = 1.0
+            dogIceCream.zPosition = 0.5
             self.addChild(dogIceCream)
             
         }
@@ -54,9 +54,9 @@ class FeedingScene: BaseScene {
             print("dog eats dog food and enjoys it")
             self.MoveButton()
             let dogNormalFood = SKSpriteNode(imageNamed: "dognormalfood")
-            dogNormalFood.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 )
+            dogNormalFood.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 - 200 )
             dogNormalFood.size = CGSize(width:200,height:200)
-            dogNormalFood.zPosition = 1.0
+            dogNormalFood.zPosition = 0.5
             
             self.addChild(dogNormalFood)
         }
