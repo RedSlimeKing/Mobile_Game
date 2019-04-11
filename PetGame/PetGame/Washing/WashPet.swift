@@ -25,7 +25,7 @@ class WashPet : SKSpriteNode, Updatable{
         self.zPosition = 10.0
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder){
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -38,7 +38,29 @@ class WashPet : SKSpriteNode, Updatable{
         isBeingTouched = true
     }
     
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?){
+        super.touchesMoved(touches, with: event)
+        
+        for touch in touches{
+            let touchPoint = touch.location(in: self)
+            if IntersectsThis(point: touchPoint){
+                isBeingTouched = true
+                return
+            }
+        }
+    }
+    
     func update(_ currentTime: TimeInterval){
         isBeingTouched = false
+    }
+    
+    func IntersectsThis(point: CGPoint) -> Bool{
+        if(point.x >= 0 - size.width / 2 && point.x <= size.width / 2){
+            if(point.y >= 0 - size.height / 2 && point.y <= size.height / 2){
+                return true
+            }
+        }
+        
+        return false
     }
 }
