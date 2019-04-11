@@ -14,6 +14,8 @@ class PetData{
     var lastWalked : NSDate
     var lastPlayedWith : NSDate
     
+    static let instance = PetData()
+    
     let hungerDuration : Double = 11.9 * 60.0 * 60.0 //Time to zero hunger in seconds
     let washDuration : Double = 18.0 * 60.0 * 60.0   //Time to zero clean in seconds
     let walkDuration : Double = 24.1 * 60.0 * 60.0   //Time to zero tired in seconds
