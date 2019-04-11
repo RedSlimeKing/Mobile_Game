@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 
 class GPSHandler : NSObject, CLLocationManagerDelegate {
-    var locMan : CLLocationManager
+    var locationManager : CLLocationManager
     var lat : Double
     var lon : Double
     var speed : Double
@@ -18,7 +18,7 @@ class GPSHandler : NSObject, CLLocationManagerDelegate {
     static let instance = GPSHandler()
     
     override init(){
-        locMan = CLLocationManager()
+        locationManager = CLLocationManager()
         lat = 0
         lon = 0
         speed = 0
@@ -26,17 +26,17 @@ class GPSHandler : NSObject, CLLocationManagerDelegate {
     }
     
     func enableLocationServices() {
-        locMan.delegate = self
+        locationManager.delegate = self
         
-        locMan.requestAlwaysAuthorization()
-        locMan.startUpdatingLocation()
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
     }
     
     public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
     }
     
-    public func locMan(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         guard let first = locations.first else {
             return
         }
