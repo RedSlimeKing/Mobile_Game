@@ -61,6 +61,7 @@ class WashScene: BaseScene{
             cleanValue -= deltaTime
             progressBar?.SetFillValue(value: CGFloat(1.0 - (cleanValue / initialCleanValue)))
             if cleanValue <= 0.0 {
+                PetData.instance.Wash()
                 MoveToScene(newScene: Scenes.lobby)
             }
             
