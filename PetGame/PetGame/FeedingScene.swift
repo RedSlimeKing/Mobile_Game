@@ -34,15 +34,31 @@ class FeedingScene: BaseScene {
         steakButton = SceneButton(text: "Steak") {
             print("dog really likes steak")
             self.MoveButton()
-           
+            let dogSteak = SKSpriteNode(imageNamed: "dogsteak")
+            dogSteak.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 )
+            dogSteak.size = CGSize(width:200,height:200)
+            dogSteak.zPosition = 1.0
+            self.addChild(dogSteak)
         }
         iceCreamButton = SceneButton(text: "Ice Cream") {
             print("dog is sick now")
             self.MoveButton()
+            let dogIceCream = SKSpriteNode(imageNamed: "dogicecream")
+            dogIceCream.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 )
+            dogIceCream.size = CGSize(width:200,height:200)
+            dogIceCream.zPosition = 1.0
+            self.addChild(dogIceCream)
+            
         }
         dogFoodButton = SceneButton(text: "Dog food") {
             print("dog eats dog food and enjoys it")
             self.MoveButton()
+            let dogNormalFood = SKSpriteNode(imageNamed: "dognormalfood")
+            dogNormalFood.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 )
+            dogNormalFood.size = CGSize(width:200,height:200)
+            dogNormalFood.zPosition = 1.0
+            
+            self.addChild(dogNormalFood)
         }
         
         
