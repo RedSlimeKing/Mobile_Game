@@ -30,6 +30,10 @@ class AchievementHandler {
         self.Achievements.insert(Achievement("Washed your pet for a week straight", 0, 7), at: self.Achievements.count)
         self.Achievements.insert(Achievement("Washed your pet for a month straight", 0, 30), at: self.Achievements.count)
         self.Achievements.insert(Achievement("Achieved Rock pet status", 0, 9), at: self.Achievements.count)
+        
+        for a in Achievements{
+            PostAchievement(key_: a.title, currentValue_: a.currentValue, requiredValue_: a.requiredValue)
+        }
     }
     
     func PostAchievement(key_: String, currentValue_: Int, requiredValue_: Int ) -> Void{
@@ -38,8 +42,10 @@ class AchievementHandler {
         defaults.set(ach, forKey: key_)
     }
     
-    func GetAchievement(key_: String) -> Achievement{
-        return UserDefaults.standard(forKey: key_)
+    func GetAchievement(key_: String) -> bool{
+        let ach = UserDefaults.standard.object(forKey: key_) as? Achievement
+        let didGet = ach.currentValue == ach.requiredValue as? Bool
+        return didGet
     }
     
 }
