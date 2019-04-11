@@ -47,7 +47,7 @@ class WalkScene: BaseScene{
         lastTime = currentTime
         
         distance += GPSHandler.instance.speed * deltaTime
-        if(distance > 0.009 ){
+        if(distance > 500.0 ){
             PetData.instance.Walk()
         }
         print(distance)
