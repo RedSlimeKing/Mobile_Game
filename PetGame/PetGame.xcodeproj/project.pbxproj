@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AC9ADCA225FD5D3000DFCC4 /* AchievementHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC9ADC9225FD5D3000DFCC4 /* AchievementHandler.swift */; };
 		D113FA6E220CE34E00DC6540 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6D220CE34E00DC6540 /* StoreKit.framework */; };
 		D113FA70220CE35800DC6540 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6F220CE35700DC6540 /* libsqlite3.tbd */; };
 		D113FA72220CE36400DC6540 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA71220CE36400DC6540 /* libz.tbd */; };
@@ -63,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1AC9ADC9225FD5D3000DFCC4 /* AchievementHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementHandler.swift; sourceTree = "<group>"; };
 		D113FA52220CDF1700DC6540 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D113FA6D220CE34E00DC6540 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D113FA6F220CE35700DC6540 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -166,6 +168,7 @@
 		D1AFEDEE220CCABD0082FA6B /* PetGame */ = {
 			isa = PBXGroup;
 			children = (
+				1AC9ADC9225FD5D3000DFCC4 /* AchievementHandler.swift */,
 				D113FA97220CEA7200DC6540 /* GoogleService-Info.plist */,
 				D113FA96220CE9AF00DC6540 /* Firebase.h */,
 				D113FA88220CE9A100DC6540 /* FIRAnalyticsConnector.framework */,
@@ -345,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1AFEDF6220CCABD0082FA6B /* GameScene.swift in Sources */,
+				1AC9ADCA225FD5D3000DFCC4 /* AchievementHandler.swift in Sources */,
 				D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */,
 				D1AFEDF8220CCABD0082FA6B /* GameViewController.swift in Sources */,
 				D1AFEDF0220CCABD0082FA6B /* AppDelegate.swift in Sources */,
