@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36592A9B225FCC2F00AAC387 /* SpriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36592A9A225FCC2F00AAC387 /* SpriteButton.swift */; };
 		67B82DE422288F8000BD5272 /* FeedingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE322288F8000BD5272 /* FeedingScene.swift */; };
 		67B82DE6222890D900BD5272 /* PettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE5222890D900BD5272 /* PettingScene.swift */; };
 		67FDD0E02216096F00928A34 /* WashScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0DF2216096F00928A34 /* WashScene.swift */; };
@@ -72,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		36592A9A225FCC2F00AAC387 /* SpriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteButton.swift; sourceTree = "<group>"; };
 		67B82DE322288F8000BD5272 /* FeedingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingScene.swift; sourceTree = "<group>"; };
 		67B82DE5222890D900BD5272 /* PettingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PettingScene.swift; sourceTree = "<group>"; };
 		67FDD0DF2216096F00928A34 /* WashScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashScene.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				67B82DE5222890D900BD5272 /* PettingScene.swift */,
 				D1A2C20222442803005E86EB /* BaseScene.swift */,
 				D1A2C20422442E19005E86EB /* SceneButton.swift */,
+				36592A9A225FCC2F00AAC387 /* SpriteButton.swift */,
 			);
 			path = PetGame;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36592A9B225FCC2F00AAC387 /* SpriteButton.swift in Sources */,
 				D1C577C82231B15000AE7A33 /* PetData.swift in Sources */,
 				D1A2C20322442803005E86EB /* BaseScene.swift in Sources */,
 				D1B8C221224D566A000E920D /* WalkScene.swift in Sources */,
