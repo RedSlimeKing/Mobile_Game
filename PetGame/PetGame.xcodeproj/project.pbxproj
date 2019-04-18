@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360B823F226907E000CC3EC1 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360B823E226907E000CC3EC1 /* ProgressBar.swift */; };
 		36592A9B225FCC2F00AAC387 /* SpriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36592A9A225FCC2F00AAC387 /* SpriteButton.swift */; };
 		36592A9D225FDF4F00AAC387 /* GPSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36592A9C225FDF4F00AAC387 /* GPSHandler.swift */; };
 		67B82DE422288F8000BD5272 /* FeedingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE322288F8000BD5272 /* FeedingScene.swift */; };
@@ -72,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		360B823E226907E000CC3EC1 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		36592A9A225FCC2F00AAC387 /* SpriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteButton.swift; sourceTree = "<group>"; };
 		36592A9C225FDF4F00AAC387 /* GPSHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSHandler.swift; sourceTree = "<group>"; };
 		67B82DE322288F8000BD5272 /* FeedingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingScene.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				D1AFEE01220CCABE0082FA6B /* Info.plist */,
 				D1AFEE23220CCFD90082FA6B /* Zombie.swift */,
 				D1B8C220224D566A000E920D /* WalkScene.swift */,
+				360B823E226907E000CC3EC1 /* ProgressBar.swift */,
 				67FDD0DF2216096F00928A34 /* WashScene.swift */,
 				67FDD0E322160F5100928A34 /* LobbyScene.swift */,
 				67B82DE322288F8000BD5272 /* FeedingScene.swift */,
@@ -377,6 +380,7 @@
 				D1B8C221224D566A000E920D /* WalkScene.swift in Sources */,
 				67B82DE422288F8000BD5272 /* FeedingScene.swift in Sources */,
 				67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */,
+				360B823F226907E000CC3EC1 /* ProgressBar.swift in Sources */,
 				D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */,
 				67FDD0E02216096F00928A34 /* WashScene.swift in Sources */,
 				36592A9D225FDF4F00AAC387 /* GPSHandler.swift in Sources */,
