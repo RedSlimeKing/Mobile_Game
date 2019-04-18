@@ -39,6 +39,7 @@ class FeedingScene: BaseScene {
             dogSteak.size = CGSize(width:200,height:200)
             dogSteak.zPosition = 0.5
             self.addChild(dogSteak)
+            PetData.instance.Feed()
         }
         iceCreamButton = SceneButton(text: "Ice Cream") {
             print("dog is sick now")
@@ -59,6 +60,8 @@ class FeedingScene: BaseScene {
             dogNormalFood.zPosition = 0.5
             
             self.addChild(dogNormalFood)
+            
+            PetData.instance.Feed()
         }
         
         
