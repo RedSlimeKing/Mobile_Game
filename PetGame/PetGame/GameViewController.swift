@@ -9,19 +9,33 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+protocol ScreenSwitchable {
+    func SwitchScreens(string: Scenes)
+}
 
-class GameViewController: UIViewController {
+enum Scenes: String {
+    case lobby = "LobbyScene"
+    case wash = "WashScene"
+    case feeding = "FeedingScene"
+    case petting = "PettingScene"
+    case walking = "WalkingScene"
+}
 
+class GameViewController: UIViewController,ScreenSwitchable {
+    
+    var currentScene : BaseScene?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let scene = GameScene(size: CGSize(width: 2048, height: 1536))
+        currentScene = LobbyScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
+        currentScene?.screenDelegate = self
         let skView = self.view as! SKView
         skView.showsFPS = true
         skView.showsNodeCount = true
         skView.ignoresSiblingOrder = true
-        scene.scaleMode = .aspectFill
-        skView.presentScene(scene)
+        currentScene?.scaleMode = .aspectFill
+        skView.presentScene(currentScene)
         
 //        if let view = self.view as! SKView? {
 //            // Load the SKScene from 'GameScene.sks'
@@ -43,7 +57,26 @@ class GameViewController: UIViewController {
     override var shouldAutorotate: Bool {
         return true
     }
-
+    
+    func  SwitchScreens(string: Scenes) {
+        let skView = view as! SKView
+        switch string {
+        case .lobby:
+            currentScene = LobbyScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
+        case .wash:
+            currentScene = WashScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
+        case .feeding:
+            currentScene = FeedingScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
+        case .walking:
+            currentScene = WalkScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
+        case .petting:
+            currentScene = PettingScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
+        }
+        
+        currentScene?.screenDelegate = self
+        skView.presentScene(currentScene)
+    }
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
@@ -61,3 +94,12 @@ class GameViewController: UIViewController {
         return true
     }
 }
+
+
+
+
+extension Notification.Name {
+    static let didRecieveButtonInput = Notification.Name("didRecieveButtonInput")
+    
+}
+
