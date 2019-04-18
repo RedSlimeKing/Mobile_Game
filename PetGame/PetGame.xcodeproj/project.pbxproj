@@ -14,6 +14,7 @@
 		67B82DE6222890D900BD5272 /* PettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE5222890D900BD5272 /* PettingScene.swift */; };
 		67FDD0E02216096F00928A34 /* WashScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0DF2216096F00928A34 /* WashScene.swift */; };
 		67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0E322160F5100928A34 /* LobbyScene.swift */; };
+		D1013671225A6FE3000DE2EB /* WashPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1013670225A6FE3000DE2EB /* WashPet.swift */; };
 		D113FA6E220CE34E00DC6540 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6D220CE34E00DC6540 /* StoreKit.framework */; };
 		D113FA70220CE35800DC6540 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6F220CE35700DC6540 /* libsqlite3.tbd */; };
 		D113FA72220CE36400DC6540 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA71220CE36400DC6540 /* libz.tbd */; };
@@ -26,6 +27,7 @@
 		D113FA94220CE9A200DC6540 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA8C220CE9A100DC6540 /* nanopb.framework */; };
 		D113FA95220CE9A200DC6540 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA8D220CE9A100DC6540 /* FirebaseInstanceID.framework */; };
 		D113FA98220CEA7200DC6540 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D113FA97220CEA7200DC6540 /* GoogleService-Info.plist */; };
+		D1860447225FCD2900F6ABF9 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1860446225FCD2900F6ABF9 /* ProgressBar.swift */; };
 		D1A2C20322442803005E86EB /* BaseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2C20222442803005E86EB /* BaseScene.swift */; };
 		D1A2C20522442E19005E86EB /* SceneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2C20422442E19005E86EB /* SceneButton.swift */; };
 		D1AFEDF0220CCABD0082FA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */; };
@@ -80,6 +82,7 @@
 		67B82DE5222890D900BD5272 /* PettingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PettingScene.swift; sourceTree = "<group>"; };
 		67FDD0DF2216096F00928A34 /* WashScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashScene.swift; sourceTree = "<group>"; };
 		67FDD0E322160F5100928A34 /* LobbyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyScene.swift; sourceTree = "<group>"; };
+		D1013670225A6FE3000DE2EB /* WashPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashPet.swift; sourceTree = "<group>"; };
 		D113FA52220CDF1700DC6540 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D113FA6D220CE34E00DC6540 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D113FA6F220CE35700DC6540 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -94,6 +97,7 @@
 		D113FA8D220CE9A100DC6540 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		D113FA96220CE9AF00DC6540 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
 		D113FA97220CEA7200DC6540 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1860446225FCD2900F6ABF9 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		D1A2C20222442803005E86EB /* BaseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScene.swift; sourceTree = "<group>"; };
 		D1A2C20422442E19005E86EB /* SceneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneButton.swift; sourceTree = "<group>"; };
 		D1AFEDEC220CCABD0082FA6B /* PetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +156,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1013672225A7EAC000DE2EB /* Washing */ = {
+			isa = PBXGroup;
+			children = (
+				D1860446225FCD2900F6ABF9 /* ProgressBar.swift */,
+				D1013670225A6FE3000DE2EB /* WashPet.swift */,
+				67FDD0DF2216096F00928A34 /* WashScene.swift */,
+			);
+			path = Washing;
+			sourceTree = "<group>";
+		};
 		D113FA53220CDFB600DC6540 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +200,7 @@
 		D1AFEDEE220CCABD0082FA6B /* PetGame */ = {
 			isa = PBXGroup;
 			children = (
+				D1013672225A7EAC000DE2EB /* Washing */,
 				D1C577C72231B15000AE7A33 /* PetData.swift */,
 				D113FA97220CEA7200DC6540 /* GoogleService-Info.plist */,
 				D113FA96220CE9AF00DC6540 /* Firebase.h */,
@@ -379,6 +394,7 @@
 				D1A2C20322442803005E86EB /* BaseScene.swift in Sources */,
 				D1B8C221224D566A000E920D /* WalkScene.swift in Sources */,
 				67B82DE422288F8000BD5272 /* FeedingScene.swift in Sources */,
+				D1013671225A6FE3000DE2EB /* WashPet.swift in Sources */,
 				67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */,
 				360B823F226907E000CC3EC1 /* ProgressBar.swift in Sources */,
 				D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */,
@@ -386,6 +402,7 @@
 				36592A9D225FDF4F00AAC387 /* GPSHandler.swift in Sources */,
 				D1A2C20522442E19005E86EB /* SceneButton.swift in Sources */,
 				D1AFEDF8220CCABD0082FA6B /* GameViewController.swift in Sources */,
+				D1860447225FCD2900F6ABF9 /* ProgressBar.swift in Sources */,
 				67B82DE6222890D900BD5272 /* PettingScene.swift in Sources */,
 				D1AFEDF0220CCABD0082FA6B /* AppDelegate.swift in Sources */,
 			);
