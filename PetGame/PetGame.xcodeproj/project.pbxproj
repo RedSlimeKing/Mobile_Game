@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		1AC9ADCA225FD5D3000DFCC4 /* AchievementHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC9ADC9225FD5D3000DFCC4 /* AchievementHandler.swift */; };
 		36592A9B225FCC2F00AAC387 /* SpriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36592A9A225FCC2F00AAC387 /* SpriteButton.swift */; };
+		36592A9D225FDF4F00AAC387 /* GPSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36592A9C225FDF4F00AAC387 /* GPSHandler.swift */; };
 		67B82DE422288F8000BD5272 /* FeedingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE322288F8000BD5272 /* FeedingScene.swift */; };
 		67B82DE6222890D900BD5272 /* PettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B82DE5222890D900BD5272 /* PettingScene.swift */; };
-		67FDD0E02216096F00928A34 /* WashScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0DF2216096F00928A34 /* WashScene.swift */; };
 		67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD0E322160F5100928A34 /* LobbyScene.swift */; };
 		D1013671225A6FE3000DE2EB /* WashPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1013670225A6FE3000DE2EB /* WashPet.swift */; };
 		D113FA6E220CE34E00DC6540 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113FA6D220CE34E00DC6540 /* StoreKit.framework */; };
@@ -29,6 +29,8 @@
 		D1145C06226CFBB3002A66E6 /* AchievementScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1145C05226CFBB3002A66E6 /* AchievementScene.swift */; };
 		D1145C0B226CFD22002A66E6 /* AchievementIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1145C0A226CFD22002A66E6 /* AchievementIcon.swift */; };
 		D1860447225FCD2900F6ABF9 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1860446225FCD2900F6ABF9 /* ProgressBar.swift */; };
+		D1973D44226909F600A5D8A2 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1973D43226909F600A5D8A2 /* Label.swift */; };
+		D1973D462269178400A5D8A2 /* WashScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1973D452269178400A5D8A2 /* WashScene.swift */; };
 		D1A2C20322442803005E86EB /* BaseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2C20222442803005E86EB /* BaseScene.swift */; };
 		D1A2C20522442E19005E86EB /* SceneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2C20422442E19005E86EB /* SceneButton.swift */; };
 		D1AFEDF0220CCABD0082FA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEDEF220CCABD0082FA6B /* AppDelegate.swift */; };
@@ -78,9 +80,9 @@
 /* Begin PBXFileReference section */
 		1AC9ADC9225FD5D3000DFCC4 /* AchievementHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementHandler.swift; sourceTree = "<group>"; };
 		36592A9A225FCC2F00AAC387 /* SpriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteButton.swift; sourceTree = "<group>"; };
+		36592A9C225FDF4F00AAC387 /* GPSHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSHandler.swift; sourceTree = "<group>"; };
 		67B82DE322288F8000BD5272 /* FeedingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingScene.swift; sourceTree = "<group>"; };
 		67B82DE5222890D900BD5272 /* PettingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PettingScene.swift; sourceTree = "<group>"; };
-		67FDD0DF2216096F00928A34 /* WashScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashScene.swift; sourceTree = "<group>"; };
 		67FDD0E322160F5100928A34 /* LobbyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyScene.swift; sourceTree = "<group>"; };
 		D1013670225A6FE3000DE2EB /* WashPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashPet.swift; sourceTree = "<group>"; };
 		D113FA52220CDF1700DC6540 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
@@ -100,6 +102,8 @@
 		D1145C05226CFBB3002A66E6 /* AchievementScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementScene.swift; sourceTree = "<group>"; };
 		D1145C0A226CFD22002A66E6 /* AchievementIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementIcon.swift; sourceTree = "<group>"; };
 		D1860446225FCD2900F6ABF9 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		D1973D43226909F600A5D8A2 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		D1973D452269178400A5D8A2 /* WashScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WashScene.swift; path = Washing/WashScene.swift; sourceTree = "<group>"; };
 		D1A2C20222442803005E86EB /* BaseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScene.swift; sourceTree = "<group>"; };
 		D1A2C20422442E19005E86EB /* SceneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneButton.swift; sourceTree = "<group>"; };
 		D1AFEDEC220CCABD0082FA6B /* PetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,9 +165,7 @@
 		D1013672225A7EAC000DE2EB /* Washing */ = {
 			isa = PBXGroup;
 			children = (
-				D1860446225FCD2900F6ABF9 /* ProgressBar.swift */,
 				D1013670225A6FE3000DE2EB /* WashPet.swift */,
-				67FDD0DF2216096F00928A34 /* WashScene.swift */,
 			);
 			path = Washing;
 			sourceTree = "<group>";
@@ -191,6 +193,7 @@
 		D1AFEDE3220CCABD0082FA6B = {
 			isa = PBXGroup;
 			children = (
+				D1973D43226909F600A5D8A2 /* Label.swift */,
 				D1AFEDEE220CCABD0082FA6B /* PetGame */,
 				D1AFEE09220CCABE0082FA6B /* PetGameTests */,
 				D1AFEE14220CCABE0082FA6B /* PetGameUITests */,
@@ -236,9 +239,12 @@
 				D1AFEE01220CCABE0082FA6B /* Info.plist */,
 				D1AFEE23220CCFD90082FA6B /* Zombie.swift */,
 				D1B8C220224D566A000E920D /* WalkScene.swift */,
+				360B823E226907E000CC3EC1 /* ProgressBar.swift */,
+				D1973D452269178400A5D8A2 /* WashScene.swift */,
 				67FDD0E322160F5100928A34 /* LobbyScene.swift */,
 				67B82DE322288F8000BD5272 /* FeedingScene.swift */,
 				67B82DE5222890D900BD5272 /* PettingScene.swift */,
+				36592A9C225FDF4F00AAC387 /* GPSHandler.swift */,
 				D1A2C20222442803005E86EB /* BaseScene.swift */,
 				D1A2C20422442E19005E86EB /* SceneButton.swift */,
 				36592A9A225FCC2F00AAC387 /* SpriteButton.swift */,
@@ -406,14 +412,17 @@
 				67B82DE422288F8000BD5272 /* FeedingScene.swift in Sources */,
 				D1013671225A6FE3000DE2EB /* WashPet.swift in Sources */,
 				67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */,
+				360B823F226907E000CC3EC1 /* ProgressBar.swift in Sources */,
 				1AC9ADCA225FD5D3000DFCC4 /* AchievementHandler.swift in Sources */,
 				D1145C06226CFBB3002A66E6 /* AchievementScene.swift in Sources */,
 				D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */,
 				67FDD0E02216096F00928A34 /* WashScene.swift in Sources */,
 				D1145C0B226CFD22002A66E6 /* AchievementIcon.swift in Sources */,
+				D1973D44226909F600A5D8A2 /* Label.swift in Sources */,
+				36592A9D225FDF4F00AAC387 /* GPSHandler.swift in Sources */,
 				D1A2C20522442E19005E86EB /* SceneButton.swift in Sources */,
+				D1973D462269178400A5D8A2 /* WashScene.swift in Sources */,
 				D1AFEDF8220CCABD0082FA6B /* GameViewController.swift in Sources */,
-				D1860447225FCD2900F6ABF9 /* ProgressBar.swift in Sources */,
 				67B82DE6222890D900BD5272 /* PettingScene.swift in Sources */,
 				D1AFEDF0220CCABD0082FA6B /* AppDelegate.swift in Sources */,
 			);
