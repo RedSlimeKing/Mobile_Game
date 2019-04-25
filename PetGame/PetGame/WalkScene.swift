@@ -58,7 +58,11 @@ class WalkScene: BaseScene{
         
         let deltaTime : Double = currentTime - lastTime
         lastTime = currentTime
-        if(GPSHandler.instance.speed > 15){
+        
+        if(GPSHandler.instance.speed < 2.0){
+            print("Moving too slow, ignoring movement")
+            return
+        }else if(GPSHandler.instance.speed > 15){
             print("Too Fast")
             return
         }
