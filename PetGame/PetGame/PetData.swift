@@ -20,7 +20,7 @@ class PetData{
     let washDuration : Double = 18.0 * 60.0 * 60.0   //Time to zero clean in seconds
     let walkDuration : Double = 24.1 * 60.0 * 60.0   //Time to zero tired in seconds
     let playDuration : Double = 48.2 * 60.0 * 60.0   //Time to zero play in seconds
-    
+  
     init(){
         //Set all our values to the current date and time initially
         lastFed = NSDate()
@@ -95,16 +95,37 @@ class PetData{
     }
     
     func Feed() -> Void{
+        
+        if(isSameDate(dateOne: lastFed, dateTwo: NSDate())){
+            AchievementHandler.instance.PostAchievement(key_: "Feed 1", currentValue_:  (AchievementHandler.instance.Achievements["Feed 1"]?.currentValue)! + 1)
+            AchievementHandler.instance.PostAchievement(key_: "Feed 7", currentValue_:  (AchievementHandler.instance.Achievements["Feed 7"]?.currentValue)! + 1)
+            AchievementHandler.instance.PostAchievement(key_: "Feed 30", currentValue_:  (AchievementHandler.instance.Achievements["Feed 30"]?.currentValue)! + 1)
+        }
+        
         lastFed = NSDate()
         StoreData()
     }
     
     func Wash() -> Void{
+        
+        if(isSameDate(dateOne: lastWashed, dateTwo: NSDate())){
+            AchievementHandler.instance.PostAchievement(key_: "Wash 1", currentValue_:  (AchievementHandler.instance.Achievements["Wash 1"]?.currentValue)! + 1)
+            AchievementHandler.instance.PostAchievement(key_: "Wash 7", currentValue_:  (AchievementHandler.instance.Achievements["Wash 7"]?.currentValue)! + 1)
+            AchievementHandler.instance.PostAchievement(key_: "Wash 30", currentValue_:  (AchievementHandler.instance.Achievements["Wash 30"]?.currentValue)! + 1)
+        }
+        
         lastWashed = NSDate()
         StoreData()
     }
     
     func Walk() -> Void{
+        
+        if(isSameDate(dateOne: lastWalked, dateTwo: NSDate())){
+            AchievementHandler.instance.PostAchievement(key_: "Walk 1", currentValue_:  (AchievementHandler.instance.Achievements["Walk 1"]?.currentValue)! + 1)
+            AchievementHandler.instance.PostAchievement(key_: "Walk 7", currentValue_:  (AchievementHandler.instance.Achievements["Walk 7"]?.currentValue)! + 1)
+            AchievementHandler.instance.PostAchievement(key_: "Walk 30", currentValue_:  (AchievementHandler.instance.Achievements["Walk 30"]?.currentValue)! + 1)
+        }
+        
         lastWalked = NSDate()
         StoreData()
     }
@@ -113,4 +134,13 @@ class PetData{
         lastPlayedWith = NSDate()
         StoreData()
     }
+    
+    func isSameDate(dateOne : NSDate, dateTwo : NSDate) -> Bool{
+        let calendar = Calendar(identifier: .gregorian)
+        let compOne: NSDateComponents = calendar.dateComponents([.year, .month, .day], from: dateOne as Date) as NSDateComponents
+        let compTwo: NSDateComponents = calendar.dateComponents([.year, .month, .day], from: dateTwo as Date) as NSDateComponents;
+        return (compOne.day == compTwo.day && compOne.month == compTwo.month && compOne.year == compTwo.year);
+    }
+    
+    
 }

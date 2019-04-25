@@ -19,6 +19,7 @@ enum Scenes: String {
     case feeding = "FeedingScene"
     case petting = "PettingScene"
     case walking = "WalkingScene"
+    case achivement = "AchivementScene"
 }
 
 class GameViewController: UIViewController,ScreenSwitchable {
@@ -71,7 +72,12 @@ class GameViewController: UIViewController,ScreenSwitchable {
             currentScene = WalkScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
         case .petting:
             currentScene = PettingScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
+            
+        case .achivement:
+            currentScene = AchievementScene(size: CGSize(width:self.view.frame.size.width ,  height:self.view.frame.size.height ))
         }
+        
+        
         
         currentScene?.screenDelegate = self
         skView.presentScene(currentScene)
