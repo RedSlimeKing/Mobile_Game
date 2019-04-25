@@ -10,6 +10,10 @@ import Foundation
 
 import SpriteKit
 
+protocol Updatable {
+    func update(_ currentTime: TimeInterval)
+}
+
 class WashPet : SKSpriteNode, Updatable{
     private var isBeingTouched : Bool
     
