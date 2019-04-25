@@ -45,7 +45,7 @@ class LobbyScene: BaseScene{
         debugLabel4?.position = CGPoint(x: -130, y: 250)
         background.addChild(debugLabel4!)
         
-        let buttonAchivementScene = SceneButton(text: "Achivements!") {
+        let buttonAchivementScene = SceneButton(text: "Achievements") {
             self.MoveToScene(newScene: Scenes.achivement)
         }
         buttonAchivementScene.position = CGPoint(x: 0, y: 100)
