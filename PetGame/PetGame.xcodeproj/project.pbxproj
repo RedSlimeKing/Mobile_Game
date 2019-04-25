@@ -41,7 +41,6 @@
 		D1AFEE00220CCABE0082FA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AFEDFE220CCABE0082FA6B /* LaunchScreen.storyboard */; };
 		D1AFEE0B220CCABE0082FA6B /* PetGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEE0A220CCABE0082FA6B /* PetGameTests.swift */; };
 		D1AFEE16220CCABE0082FA6B /* PetGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEE15220CCABE0082FA6B /* PetGameUITests.swift */; };
-		D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFEE23220CCFD90082FA6B /* Zombie.swift */; };
 		D1B8C221224D566A000E920D /* WalkScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8C220224D566A000E920D /* WalkScene.swift */; };
 		D1C577C82231B15000AE7A33 /* PetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C577C72231B15000AE7A33 /* PetData.swift */; };
 /* End PBXBuildFile section */
@@ -119,7 +118,6 @@
 		D1AFEE11220CCABE0082FA6B /* PetGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AFEE15220CCABE0082FA6B /* PetGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetGameUITests.swift; sourceTree = "<group>"; };
 		D1AFEE17220CCABE0082FA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1AFEE23220CCFD90082FA6B /* Zombie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
 		D1B8C220224D566A000E920D /* WalkScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkScene.swift; sourceTree = "<group>"; };
 		D1C577C72231B15000AE7A33 /* PetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,7 +234,6 @@
 				D1AFEDFC220CCABE0082FA6B /* Assets.xcassets */,
 				D1AFEDFE220CCABE0082FA6B /* LaunchScreen.storyboard */,
 				D1AFEE01220CCABE0082FA6B /* Info.plist */,
-				D1AFEE23220CCFD90082FA6B /* Zombie.swift */,
 				D1B8C220224D566A000E920D /* WalkScene.swift */,
 				D1973D452269178400A5D8A2 /* WashScene.swift */,
 				67FDD0E322160F5100928A34 /* LobbyScene.swift */,
@@ -411,7 +408,6 @@
 				67FDD0E422160F5100928A34 /* LobbyScene.swift in Sources */,
 				1AC9ADCA225FD5D3000DFCC4 /* AchievementHandler.swift in Sources */,
 				D1145C06226CFBB3002A66E6 /* AchievementScene.swift in Sources */,
-				D1AFEE24220CCFD90082FA6B /* Zombie.swift in Sources */,
 				D1145C0B226CFD22002A66E6 /* AchievementIcon.swift in Sources */,
 				D1973D44226909F600A5D8A2 /* Label.swift in Sources */,
 				36592A9D225FDF4F00AAC387 /* GPSHandler.swift in Sources */,
