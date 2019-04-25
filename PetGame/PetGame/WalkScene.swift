@@ -17,6 +17,7 @@ class WalkScene: BaseScene{
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
+        distance = 0.0
         
         backgroundColor = SKColor.black
         let background = SKSpriteNode(imageNamed: "background1")
@@ -57,7 +58,14 @@ class WalkScene: BaseScene{
         
         let deltaTime : Double = currentTime - lastTime
         lastTime = currentTime
-        
+        if(GPSHandler.instance.speed > 15){
+            print("Too Fast")
+            return
+        }
+        if(deltaTime > 0.5){
+            print("Illegal time")
+            return
+        }
         distance += GPSHandler.instance.speed * deltaTime
         if(distance > 500.0 ){
             PetData.instance.Walk()
