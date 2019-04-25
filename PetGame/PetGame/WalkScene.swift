@@ -37,9 +37,7 @@ class WalkScene: BaseScene{
         progressBar?.SetFillValue(value: 0.0)
         background.addChild(progressBar!)
         
-        let dogButton = SpriteButton(spriteName: "dognormalfood.png"){
-            
-        }
+        let dogButton = SceneButton(text: "", imageName: "dognormalfood.png"){}
         dogButton.position = CGPoint(x: 0, y: 0)
         dogButton.size = CGSize(width: dogButton.size.width * 2.0, height: dogButton.size.height * 2.0)
         background.addChild(dogButton)

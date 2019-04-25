@@ -13,8 +13,8 @@ class SceneButton : SKSpriteNode{
     var label : SKLabelNode
     var clickEvent: () -> Void
     
-    init(text: String, clickEvent: @escaping ()-> Void ){
-        let texture = SKTexture.init(imageNamed: "button")
+    init(text: String, imageName: String = "button", clickEvent: @escaping ()-> Void ){
+        let texture = SKTexture.init(imageNamed: imageName)
         label = SKLabelNode(text: text)
         label.fontColor = UIColor.white
         label.fontName = "Arial-BoldMT"

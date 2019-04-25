@@ -19,7 +19,7 @@ class PettingScene: BaseScene {
         background.position = CGPoint(x: size.width / 2, y: size.height / 2 )
         addChild(background)
         
-        let petButton = SpriteButton(spriteName: "dognormalfood.png"){
+        let petButton = SceneButton(text: "", imageName: "dognormalfood.png"){
             PetData.instance.Play()
         }
         petButton.position = CGPoint(x: 0, y: 0)
