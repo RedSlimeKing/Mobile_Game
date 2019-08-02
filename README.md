@@ -15,7 +15,7 @@ We believe this game will not only be entertaining, but can be used as a sort of
 **The Team**  
 Jared Fukumoto (N01189530)  
 Sean Gallagher (N01163912)  
-Devon Ly (N01160689)          Github id: RedSlimeKing
+Devon Ly (N01160689)
 Carter Rennick (N01155242)  
 
 Trello: https://trello.com/b/SuAk15PY/mobile-app  
